@@ -25,19 +25,18 @@ home: https://bioinformaticsdotca.github.io/BiCG_2019
 | 4:30 | UNIX and R Review (Gibling) | | | | |  
 | 6:00 | Dinner | 5:00 | Dinner | 5:00 | Dinner |
 
- **Day 4 - 6**
+ **Days 4 - 5**
 
-| | **Day 4** | | **Day 5** | | **Day 6** |  
-| :---: | :---: | :---: | :---: |:---: | :---: |  
-| 8:00 | Breakfast | 8:00 | Breakfast | 8:00 | Breakfast |  
-| 8:30 | Module 9: Gene Fusion and Rearrangements (Haas) | 8:30 | Module 11: Working Reproducibly in the Cloud (O'Connor) | 8:30 | Guest Lecture (Hammell) |  
-| 10:30 | Coffee Break | 10:00 | Coffee Break | 10:00 | Coffee Break |  
-| 11:00 | Module 9 Lab | 10:30 | Module 12: Big Data Analytics in the Cloud (Yung) | 10:30 | Module 14: Variants to Networks (Stein and Haw) |  
-| 12:30 | Lunch | 12:30 | Lunch | 12:30 | Lunch |  
-| 1:30 | Module 10: Sharing and Scaling a VM (Mihaiescu) | 1:30 | Module 12 lab | 1:30 | Module 15: Clinical Data Integration (Erdman) |  
-| 3:00 | Coffee Break | 3:00 | Coffee Break | 3:00 | Coffee Break |  
-| 3:30 | Module 10 lab | 3:30 | Module 13: Genes to Pathways (Reimand) | 3:30 | Module 15 lab |  
-| 5:00 | Dinner | 5:00 | Dinner | 5:30 ||  
-| 7:00 | Integrated Assignment | 7:00 | Banquet | | |  
+| | **Day 4** | | **Day 5** |   
+| :---: | :---: | :---: | :---: |  
+| 8:30 | Breakfast | 8:30 | Breakfast |   
+| 9:00 | Module 8 Lab (Cavalli) | 9:00 | Module 11: Variants to Networks (Haw) | 
+| 10:30 | Coffee Break | 10:00 | Coffee Break | 
+| 11:00 | Module 9: Gene Fusion Discovery and Genomics Rearrangements (Haas) | 10:30 | Module 11 Lab (Haw) |  
+| 12:00 | Lunch | 12:30 | Lunch |  
+| 1:00 | Module 9 Lab (Haas) | 1:30 | Module 12: Big Cancer Genomics |   
+| 2:30 | Coffee Break | 2:30 | Coffee Break |   
+| 3:00 | Module 10: Genes to Pathways (Reimand) | 3:00 | Module 12 Lab |  
+| 5:00 | Dinner | 5:00 | Survey and Closing | 
 
        
