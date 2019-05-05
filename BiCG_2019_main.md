@@ -210,7 +210,7 @@ Coming soon
 
 [Lab Practical]()  
 
-## Module 12: Big Cancer Genomics
+## Module 12: Integration of Clinical Data
 
 *<font color="#827e9c">Lauren Erdman</font>* 
 
@@ -225,7 +225,7 @@ Coming soon
 
 ## Recap
 
-[Overview of workshop](https://bioinformaticsdotca.github.io/bicg_2018_recap)  
+[Overview of workshop]()  
 
 ***
 
