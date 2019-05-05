@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /bicg-2018-Unix_and_R
+permalink: /BiCG_Unix_and_R
 title: BiCG Unix and R Review
 header1: Workshop Pages for Students
-header2: Bioinformatics for Cancer Genomics
+header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
-home: https://bioinformaticsdotca.github.io/bicg_2018
+home: https://bioinformaticsdotca.github.io/BiCG_2019
 ---
 
 
