@@ -3,7 +3,7 @@ layout: tutorial_page
 permalink: /BiCG_2019_Module3_lab
 title: BiCG
 header1: Workshop Pages for Students
-header2: Bioinformatics for Cancer Genomics 2019 - Lab 3
+header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
 home: https://bioinformaticsdotca.github.io/BiCG_2019
 description: BiCG Module 3 Lab
@@ -11,7 +11,7 @@ author: Sorana Morrissy, Florence Cavalli and Heather Gibling
 modified: March 4, 2019
 ---
 
-# CBW BiCG Module 3 - IGV lab
+# BiCG Module 3 - IGV lab
 
 This lab was created by Sorana Morrissy, then modified by Florence Cavalli and Heather Gibling
 
