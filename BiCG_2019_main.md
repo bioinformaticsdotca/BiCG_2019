@@ -15,7 +15,7 @@ length: 5 days
 
 Welcome to Bioinformatics for Cancer Genomics 2019.  
 
-The course schedule can be found [here](https://bioinformaticsdotca.github.io/BiCG_2019_schedule).   
+The course schedule can be found [here](https://bioinformaticsdotca.github.io/BiCG_2019/BiCG_2019_schedule).
 
 Pre-readings, pre-work, and laptop setup instructions can be found here [here](https://bioinformaticsdotca.github.io/BiCG_2018_prework).
 
