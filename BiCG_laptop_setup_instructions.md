@@ -57,12 +57,12 @@ version
 
 10) A PDF viewer (Adobe Acrobat or equivalent).
 
-12) Install [Cytoscape 3.7.1](https://cytoscape.org/download-platforms.html).  
+11) Install [Cytoscape 3.7.1](https://cytoscape.org/download-platforms.html).  
 
 Choose the version corresponding to your operating system (OS, Windows or UNIX) 
 Cytoscape requires Java8: check your version at  https://www.java.com/verify/ and download Java8 if you do not have it installed. Contact your system administrator if you have trouble with Java installation. 
 
-13) Within the Cytoscape program, install the following Cytoscape apps.  
+12) Within the Cytoscape program, install the following Cytoscape apps.  
 
 From the menu bar, select ‘Apps’, then ‘App Manager’.
  
@@ -76,7 +76,7 @@ Within 'all apps', search for the following and install:
  * stringApp
  
  
-14) Install the data set within GeneMANIA app.
+13) Install the data set within GeneMANIA app.
 
 From the menu bar, select 'Apps', hover over 'GeneMANIA', then select 'Choose Another Data Set'.  
 From the list of available data sets, select the most recent (2017-07-13/13 July 2017) and under ‘Include only these networks:' select ‘all’. Click on ‘Download’.  
@@ -84,7 +84,7 @@ An ‘Install Data' window will pop-up. Select H.Sapiens Human (2589 MB). Click 
 This requires time and a good network connection to download completely, so be patient (around 15mins).  
 
   
-15) Install GSEA.  
+14) Install GSEA.  
 
 Go to the [GSEA page](http://www.broadinstitute.org/gsea/index.jsp)    
 Register  
