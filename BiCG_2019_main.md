@@ -147,7 +147,7 @@ Coming soon
 
 ## Integrated Assignment
 
-[Integrated Assignment](https://bioinformaticsdotca.github.io/bicg_2018_ia)  
+[Integrated Assignment]()  
 
 ***
 
@@ -175,7 +175,7 @@ Coming soon
 
 ## Integrated Assignment
 
-[Integrated Assignment](https://bioinformaticsdotca.github.io/day4_integrative_assignment)  
+[Integrated Assignment]()  
 
 ***
 
