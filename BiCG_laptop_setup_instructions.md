@@ -1,6 +1,6 @@
 ---
 layout: tutorial_page
-permalink: /laptop_setup_instructions
+permalink: /BiCG_laptop_setup_instructions
 title: BiCG
 header1: Workshop Pages for Students
 header2: Bioinformatics for Cancer Genomics 2019
