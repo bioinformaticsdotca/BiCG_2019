@@ -19,8 +19,8 @@ home: https://bioinformaticsdotca.github.io/BiCG_2019
 | 11:30 | Module 2: Ethics of Data Usage and Security (Phillips) |10:30 | Module 4 Lab: Genome Assembly (Simpson) | 11:00 | Module 7: Somatic Mutations and Annotations (Morrissy) |  
 | 12:30 | Lunch | 12:00 | Lunch | 12:30 | Lunch |  
 | 1:30 | Module 3: Databases and Visualization Tools (Ouellette) |1:00 | Module 5: Genome Assembly (Simpson) | 1:30 | Module 7 Lab (Morrissy) |    
-| 2:30 | Coffee Break | 2:30 | Coffee Break | 3:00 | Coffee Break |   
-| 3:00 | Module 3 Lab (Gibling) | 3:00 | Module 6: Somatic Copy Number Changes (Morrissy) | 3:30 | Module 8: Gene Expression Profiling (Cavalli) |  
+| 2:30 | Coffee Break | 3:00 | Coffee Break | 3:00 | Coffee Break |   
+| 3:00 | Module 3 Lab (Gibling) | 3:30 | Module 6: Somatic Copy Number Changes (Morrissy) | 3:30 | Module 8: Gene Expression Profiling (Cavalli) |  
 | 4:00 | Logging into the Cloud (Lu) | | | | |  
 | 4:30 | UNIX and R Review (Gibling) | | | | |  
 | 6:00 | Dinner | 5:00 | Dinner | 5:00 | Dinner |
