@@ -7,7 +7,7 @@ header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
 keywords: Visualize genomic data, pathway analysis, integrate clinical data
 description: Course covers the key bioinformatics concepts and tools required to analyze cancer genomic data sets and access and work with data sets in the cloud. 
-instructors: Jared Simpson, Trevor Pugh, Francis Ouellette, Sorana Morrissy, Florence Cavalli, Juri Reimand, Lincoln Stein, Robin Haw, Mark Phillips, Zhibin Lu
+instructors: Jared Simpson, Trevor Pugh, Francis Ouellette, Sorana Morrissy, Florence Cavalli, Juri Reimand, Lincoln Stein, Robin Haw, Mark Phillips, Heather Gibling, Aaron Gillmor, Zhibin Lu
 length: 5 days
 ---
 
@@ -27,11 +27,11 @@ If you have questions or comments, visit the workshop [Q&A forum](https://classr
 
 ## Laptop Setup Instructions
 
-Instructions to setup your laptop can be found [here](https://bioinformaticsdotca.github.io/laptop_setup_instructions).
+Instructions to setup your laptop can be found [here](https://bioinformaticsdotca.github.io/BiCG_laptop_setup_instructions).
 
 ## Pre-workshop Tutorials
 
-Pre-readings and pre-work can be found here [here](https://bioinformaticsdotca.github.io/BiCG_2019_prework).
+Pre-readings and pre-work can be found here [here](https://bioinformaticsdotca.github.io/BiCG_2019_prework).  
 It is in your best interest to complete these before the workshop.
 
 ***
