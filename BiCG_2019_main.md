@@ -86,7 +86,7 @@ Coming soon
 
 *<font color="#827e9c">Heather Gibling</font>*
 
-[Assignment](https://bioinformaticsdotca.github.io/bicg-2018-Unix_and_R)  
+[Assignment](https://bioinformaticsdotca.github.io/BiCG_Unix_and_R)  
 
 * [Data file 1](https://raw.githubusercontent.com/bioinformaticsdotca/Genomic_Med_2017/master/test.fasta)  
 * [Data file 2](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2017/master/Review_session/Gene_R_example.csv)  
