@@ -15,13 +15,13 @@ length: 5 days
 
 Welcome to Bioinformatics for Cancer Genomics 2019.  
 
-The course schedule can be found [here](https://bioinformaticsdotca.github.io/BiCG_2019/BiCG_2019_schedule).
+The course schedule can be found [here](https://bioinformaticsdotca.github.io/BiCG_2019_schedule).
 
 Pre-readings, pre-work, and laptop setup instructions can be found here [here](https://bioinformaticsdotca.github.io/BiCG_2018_prework).
 
 If you have questions or comments, visit the workshop [Q&A forum](https://classroom.google.com). You may need to join the group by clicking on the "+" symbol and entering the class code.
 
-You can download the printed course manual [here](https://drive.google.com/a/bioinformatics.ca/file/d/1akmOOcb5zRjC7-CNvjUaHTD0iHbJZYwv/view?usp=sharing).  
+CLASS MATERIALS: You can download the printed course manual [here]().  
 
 ***
 
@@ -106,13 +106,6 @@ Coming soon
 
 [Lecture]()  
 
-[Lab Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1WrPblzAsi2x4sb_PnzZ4cK89Rvhtv9ZC/view?usp=sharing)  
-
-[Lab Practical](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab)  
-
-* [Installation](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_install)  
-* [Data Preprocessing](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_preprocessing)
-
 ## Integrative Assignment  
 
 [Assignment](https://bioinformaticsdotca.github.io/bicg_2018_ia2)
@@ -120,6 +113,17 @@ Coming soon
 ***
 
 # Day 3 <a id="day3"></a>  
+
+## Module 6 Lab
+
+*<font color="#827e9c">Sorana Morrissy</font>* 
+
+[Lab Lecture]()  
+
+[Lab Practical]()  
+
+* [Installation](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_install)  
+* [Data Preprocessing](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_preprocessing)
 
 ## Module 7: Somatic Mutations and Annotations
 
@@ -129,12 +133,24 @@ Coming soon
   
 [Lab Practical](https://bioinformaticsdotca.github.io/bicg_2018_lab_7)  
 
-## Module 8: Gene Expression  
+## Module 8: Gene Expression Profiling 
 
 *<font color="#827e9c">Florence Cavalli</font>* 
 
 [Lecture]()  
- 
+
+## Integrated Assignment
+
+[Integrated Assignment]()  
+
+***
+
+# Day 4 <a id="day4"></a>
+
+## Module 8 Lab  
+
+*<font color="#827e9c">Florence Cavalli</font>* 
+
 [Ballgown code](https://drive.google.com/a/bioinformatics.ca/file/d/0B2tkpG9cB9bdbFlCeHEzcDBDSmZ4aTZ4dHpiQUVET0c1TU1j/view?usp=sharing)  
 
 [Supplementary code](https://drive.google.com/a/bioinformatics.ca/file/d/0B2tkpG9cB9bdZndNNy1LYVVWNEJaT0x3Ykp3WTQteW9jTzhv/view?usp=sharing)
@@ -144,14 +160,6 @@ Coming soon
 [Questions with Answers PDF](https://drive.google.com/a/bioinformatics.ca/file/d/1qvrULzdtZ8SIU28kLMl4E3M_XFo94QyM/view?usp=sharing)  
 
 [Questions with Answers Word](https://drive.google.com/a/bioinformatics.ca/file/d/1Zstc8oAqLgppQF-wdvJzHZU6xbYBNAjc/view?usp=sharing)  
-
-## Integrated Assignment
-
-[Integrated Assignment]()  
-
-***
-
-# Day 4 <a id="day4"></a>
 
 ## Module 9: Gene Fusion and Rearrangements
 
