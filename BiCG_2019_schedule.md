@@ -34,7 +34,7 @@ home: https://bioinformaticsdotca.github.io/BiCG_2019
 | 10:30 | Coffee Break | 10:00 | Coffee Break | 
 | 11:00 | Module 9: Gene Fusion Discovery and Genomics Rearrangements (Haas) | 10:30 | Module 11 Lab (Haw) |  
 | 12:00 | Lunch | 12:30 | Lunch |  
-| 1:00 | Module 9 Lab (Haas) | 1:30 | Module 12: Big Cancer Genomics |   
+| 1:00 | Module 9 Lab (Haas) | 1:30 | Module 12: Integration of Clinical Data (Erdman) |   
 | 2:30 | Coffee Break | 2:30 | Coffee Break |   
 | 3:00 | Module 10: Genes to Pathways (Reimand) | 3:00 | Module 12 Lab |  
 | 5:00 | Dinner | 5:00 | Survey and Closing | 
