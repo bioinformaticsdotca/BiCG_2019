@@ -1,6 +1,17 @@
+---
+layout: tutorial_page
+permalink: /BiCG_2019_prework
+title: BiCG
+header1: Workshop Pages for Students
+header2: Bioinformatics for Cancer Genomics 2019
+image: /site_images/CBW_cancerDNA_icon-16.jpg
+home: https://bioinformaticsdotca.github.io/BiCG_2019
+---
+
+***
+
 ## Pre-workshop Tutorials
 
-Pre-readings and pre-work can be found here [here](https://bioinformaticsdotca.github.io/BiCG_2019_prework).
 It is in your best interest to complete these before the workshop.
 
 1) **R Preparation tutorials**: You are expected to have completed the following tutorials in **R** beforehand. The tutorial should be very accessible even if you have never used **R** before.
@@ -50,11 +61,7 @@ Before coming to the workshop, read these:
 
   * [De novo transcript sequence reconstruction from RNA-seq using the Trinity platform for reference generation and analysis](http://www.nature.com/nprot/journal/v8/n8/full/nprot.2013.084.html)
   
-  * [Recurrent chimeric RNAs enriched in human prostate cancer identified by deep sequencing](http://www.ncbi.nlm.nih.gov/pubmed/21571633)
-  
   * [Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap](https://www.nature.com/articles/s41596-018-0103-9)
-  
-  * [iRegulon: From a Gene List to a Gene Regulatory Network Using Large Motif and Track Collections](http://www.ncbi.nlm.nih.gov/pubmed/25058159)
   
   * [The GeneMANIA prediction server: biological network integration for gene prioritization and predicting gene function](http://www.ncbi.nlm.nih.gov/pubmed/20576703)
   
@@ -68,6 +75,6 @@ Before coming to the workshop, read these:
   
   * [Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles](http://www.ncbi.nlm.nih.gov/pubmed/16199517)
   
-  * [Expression data analysis with reactome](http://www.ncbi.nlm.nih.gov/pubmed/25754994)  
+  * [Expression data analysis with Reactome](http://www.ncbi.nlm.nih.gov/pubmed/25754994)  
 
 ***
