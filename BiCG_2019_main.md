@@ -17,11 +17,89 @@ Welcome to Bioinformatics for Cancer Genomics 2019.
 
 The course schedule can be found [here](https://bioinformaticsdotca.github.io/BiCG_2019_schedule).
 
-Pre-readings, pre-work, and laptop setup instructions can be found here [here](https://bioinformaticsdotca.github.io/BiCG_2018_prework).
-
 If you have questions or comments, visit the workshop [Q&A forum](https://classroom.google.com). You may need to join the group by clicking on the "+" symbol and entering the class code.
 
-CLASS MATERIALS: You can download the printed course manual [here]().  
+**CLASS MATERIALS:** You can download the printed course manual [here]().  
+
+***
+
+# Pre-Workshop Materials <a id="preworkshop"></a>
+
+## Laptop Setup Instructions
+
+Instructions to setup your laptop can be found [here](https://bioinformaticsdotca.github.io/laptop_setup_instructions).
+
+## Pre-workshop Tutorials
+
+Pre-readings and pre-work can be found here [here](https://bioinformaticsdotca.github.io/BiCG_2019_prework).
+It is in your best interest to complete these before the workshop.
+
+1) **R Preparation tutorials**: You are expected to have completed the following tutorials in **R** beforehand. The tutorial should be very accessible even if you have never used **R** before.
+
+* The [CBW R tutorial](http://bioinformatics-ca.github.io/CBW_R_Tutorial/)
+* [Quick and Dirty Guide to **R**](http://ww2.coastal.edu/kingw/statistics/R-tutorials/text/quick&dirty_R.txt)  
+* The [R Tutorial](http://www.cyclismo.org/tutorial/R/) up to and including 5. Basic Plots
+* The [R command cheat sheet](../../resources/R_Short-refcard.pdf)
+
+2) **UNIX Preparation tutorials**:  
+
+* [UNIX Bootcamp](https://rnabio.org/module-00-setup/0000/06/01/Unix/)
+* Tutorials #1-3 on [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)  
+* [Unix Cheat sheet](http://www.rain.org/~mkummel/unix.html) 
+
+3) [Sequencing Terminology](http://www.ncbi.nlm.nih.gov/projects/genome/glossary.shtml)
+
+4)  **Cytoscape Preparation tutorials**: Complete the [introductory tutorial to Cytoscape](http://opentutorials.cgl.ucsf.edu/index.php/Portal:Cytoscape3)
+
+* Introduction to Cytoscape3 - User Interface
+
+* Introduction to Cytoscape3 - Welcome Screen
+
+* Filtering and Editing in Cytoscape 3
+
+## Pre-workshop Readings  
+
+Before coming to the workshop, read these:
+  
+  * [Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration](http://www.ncbi.nlm.nih.gov/pubmed/22517427)
+  
+  * [Genome structural variation discovery and genotyping](http://www.ncbi.nlm.nih.gov/pubmed/21358748)
+  
+  * [A survey of sequence alignment algorithms for next-generation sequencing](http://www.ncbi.nlm.nih.gov/pubmed/20460430)
+  
+  * [Genotype and SNP calling from next-generation sequencing data](http://www.ncbi.nlm.nih.gov/pubmed/21587300)
+  
+  * [Informatics for RNA Sequencing: A Web Resource for Analysis on the Cloud](https://www.ncbi.nlm.nih.gov/pubmed/26248053)  
+
+  * [Transcript-level expression analysis of RNA-seq experiments with HISAT, StringTie and Ballgown](https://www.ncbi.nlm.nih.gov/pubmed/27560171)
+  
+  * [ENCODE RNA-Seq Standards](https://genome.ucsc.edu/ENCODE/protocols/dataStandards/ENCODE_RNAseq_Standards_V1.0.pdf)
+  
+  * [Methods to study splicing from high-throughput RNA sequencing data](http://www.ncbi.nlm.nih.gov/pubmed/24549677)  
+  
+  * [A comprehensive assessment of RNA-seq accuracy, reproducibility and information content by the Sequencing Quality Control Consortium](http://www.ncbi.nlm.nih.gov/pubmed/25150838)
+
+  * [De novo transcript sequence reconstruction from RNA-seq using the Trinity platform for reference generation and analysis](http://www.nature.com/nprot/journal/v8/n8/full/nprot.2013.084.html)
+  
+  * [Recurrent chimeric RNAs enriched in human prostate cancer identified by deep sequencing](http://www.ncbi.nlm.nih.gov/pubmed/21571633)
+  
+  * [Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap](https://www.nature.com/articles/s41596-018-0103-9)
+  
+  * [iRegulon: From a Gene List to a Gene Regulatory Network Using Large Motif and Track Collections](http://www.ncbi.nlm.nih.gov/pubmed/25058159)
+  
+  * [The GeneMANIA prediction server: biological network integration for gene prioritization and predicting gene function](http://www.ncbi.nlm.nih.gov/pubmed/20576703)
+  
+  * [GeneMANIA Prediction Server 2013 Update](http://www.ncbi.nlm.nih.gov/pubmed/23794635)
+  
+  * [How to visually interpret biological data using networks](http://www.ncbi.nlm.nih.gov/pubmed/19816451)
+  
+  * [g:Profiler--a web-based toolset for functional profiling of gene lists from large-scale experiments](http://www.ncbi.nlm.nih.gov/pubmed/17478515)
+  
+  * [g:Profiler--a web server for functional interpretation of gene lists (2011 update)](http://www.ncbi.nlm.nih.gov/pubmed/21646343)
+  
+  * [Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles](http://www.ncbi.nlm.nih.gov/pubmed/16199517)
+  
+  * [Expression data analysis with reactome](http://www.ncbi.nlm.nih.gov/pubmed/25754994)  
 
 ***
 
