@@ -70,7 +70,7 @@ Coming soon
 
 *<font color="#827e9c">Heather Gibling</font>*
 
-[Lab Practical]() 
+[Lab Practical](http://bioinformaticsdotca.github.io/BiCG_2019_Module3_lab) 
 
 ## Logging into the Cloud
 
