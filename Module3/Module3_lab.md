@@ -1,17 +1,17 @@
 ---
 layout: tutorial_page
-permalink: /CSHL_2019_Module2_lab
-title: HT-Bio
+permalink: /BiCG_2019_Module3_lab
+title: BiCG
 header1: Workshop Pages for Students
-header2: High-throughput Biology - From Sequence to Networks 2019 - Lab 2
-image: /site_images/CBW-CSHL-graphic-square.png
-home: https://bioinformaticsdotca.github.io/CSHL_2019
-description: HT-Bio Module 2 Lab
+header2: Bioinformatics for Cancer Genomics 2019 - Lab 3
+image: /site_images/CBW_cancerDNA_icon-16.jpg
+home: https://bioinformaticsdotca.github.io/BiCG_2019
+description: BiCG Module 3 Lab
 author: Sorana Morrissy, Florence Cavalli and Heather Gibling
 modified: March 4, 2019
 ---
 
-# CBW HT-seq Module 2 - IGV lab
+# CBW BiCG Module 3 - IGV lab
 
 This lab was created by Sorana Morrissy, then modified by Florence Cavalli and Heather Gibling
 
@@ -82,7 +82,7 @@ We will also load additional tracks from **Server** *(File -> Load from Server)*
 
 *Note:* If you are using a computer with low memory, only load the gene annotations.
 
-![loag_hg19_genome](https://github.com/bioinformaticsdotca/HT-Biology_2017/raw/master/HtSeq/img/igv_genome1.png)
+![Load_hg19_genome](https://github.com/bioinformaticsdotca/HT-Biology_2017/raw/master/HtSeq/img/igv_genome1.png)
 
 ![Load hg19 genome and additional data tracks](https://github.com/bioinformaticsdotca/HT-Biology_2017/raw/master/HtSeq/img/igv_server_load.png)
 <!---(https://bioinformatics-ca.github.io/images/Igv_load_data_tracks.png)--->
@@ -96,7 +96,7 @@ You should see listing of chromosomes in this reference genome. Click on **1**, 
 
 Navigate to **chr1:10,000-11,000** by entering this into the location field (in the top-left corner of the interface) and clicking **Go** or pressing Enter/Return on your keyboard. This shows a window of chromosome 1 that is 1,000 base pairs wide and beginning at position 10,000.
 
-![Navigition using Location text field. Sequence track displayed as sequence of colours.](https://bioinformatics-ca.github.io/images/Igv-1.png)
+![Navigation using Location text field. Sequence track displayed as sequence of colours.](https://bioinformatics-ca.github.io/images/Igv-1.png)
 
 IGV displays the sequence of letters in a genome as a sequence of colours (e.g. A = green). This makes repetitive sequences, like the ones found at the start of this region, easy to identify.
 
