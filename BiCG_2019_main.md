@@ -80,7 +80,7 @@ Coming soon
 
 [Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
 
-* We have set up instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download [this certificate](http://main.oicrcbw.ca/private/CBWNY.pem). Otherwise if you plan on using Windows (with Putty), please download [this certificate](http://main.oicrcbw.ca/private/CBWNY.ppk).  
+* We have set up instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download [this certificate](). Otherwise if you plan on using Windows (with Putty), please download [this certificate]().  
 
 ## Unix and R review
 
