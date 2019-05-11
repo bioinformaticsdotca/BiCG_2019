@@ -1,19 +1,19 @@
 ---
 layout: tutorial_page
-permalink: /CSHL_2019_Module14_lab
-title: HT-Bio
+permalink: /BiCG_2019_Module11_lab
+title: BiCG
 header1: Workshop Pages for Students
-header2: High-throughput Biology - From Sequence to Networks 2019 - Lab 14
-image: /site_images/CBW-CSHL-graphic-square.png
-home: https://bioinformaticsdotca.github.io/CSHL_2019
-description: HT-Bio Module 14 Lab
+header2: Bioinformatics for Cancer Genomics 2019
+image: /site_images/CBW_cancerDNA_icon-16.jpg
+home: https://bioinformaticsdotca.github.io/BiCG_2019
+description: BiCG Module 11 Lab
 author: Robin Haw
 modified: June 26th, 2018
 ---
 
 **This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US). This means that you are able to copy, share and modify the work, as long as the result is distributed under the same license.**
 
-# Module 14 Practical Lab: Reactome
+# Module 11 Practical Lab: Reactome
 
 By Robin Haw
 
