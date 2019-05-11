@@ -1,12 +1,12 @@
 ---
 layout: tutorial_page
-permalink: /CSHL_2019_Module14_lab_answers
-title: HT-Bio
+permalink: /BiCG_2019_Module11_lab_answers
+title: BiCG
 header1: Workshop Pages for Students
-header2: High-throughput Biology - From Sequence to Networks 2019 - Lab 14
-image: /site_images/CBW-CSHL-graphic-square.png
-home: https://bioinformaticsdotca.github.io/CSHL_2019
-description: HT-Bio Module 3 Lab
+header2: Bioinformatics for Cancer Genomics 2019
+image: /site_images/CBW_cancerDNA_icon-16.jpg
+home: https://bioinformaticsdotca.github.io/BiCG_2019
+description: BiCG 2019 Module 11 Lab Answers
 author: Robin Haw
 modified: March 5, 2019
 ---
@@ -17,7 +17,7 @@ modified: March 5, 2019
 
 By Robin Haw
 
-CBW Lab Module 14 Answers
+CBW Lab Module 11 Answers
 
 Example 1.
 1.	The overall sub-network consists of 282 nodes and 730 edges. The largest component of the subnetwork consists of 249 nodes and 633 edges, with the remainder of nodes and edges distributed amongst 8 other small subnetworks and interactions.
