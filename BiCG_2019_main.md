@@ -13,11 +13,11 @@ length: 5 days
 
 # Welcome <a id="welcome"></a>
 
-Welcome to Bioinformatics for Cancer Genomics 2019.  
+[Welcome](https://drive.google.com/a/bioinformatics.ca/file/d/1HJ-CjEmMeyYuiZ-rQrP_eWXHnIc42dWV/view?usp=sharing) to Bioinformatics for Cancer Genomics 2019.  
 
 The course schedule can be found [here](https://bioinformaticsdotca.github.io/BiCG_2019_schedule).
 
-If you have questions or comments, visit the workshop [Q&A forum](https://classroom.google.com). You may need to join the group by clicking on the "+" symbol and entering the class code.
+Meet your faculty [here](https://drive.google.com/a/bioinformatics.ca/file/d/1hDpqptFM_kjnTTnqJGgujhzbNcqF-Qua/view?usp=sharing)
 
 **CLASS MATERIALS:** You can download the printed course manual [here]().  
 
