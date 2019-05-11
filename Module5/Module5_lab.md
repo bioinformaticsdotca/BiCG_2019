@@ -1,12 +1,12 @@
 ---
 layout: tutorial_page
-permalink: /CSHL_2019_Module6_lab
-title: HT-Bio
+permalink: /BiCG_2019_Module5_lab
+title: BiCG
 header1: Workshop Pages for Students
-header2: High-throughput Biology - From Sequence to Networks 2019 - Lab 6
-image: /site_images/CBW-CSHL-graphic-square.png
-home: https://bioinformaticsdotca.github.io/CSHL_2019
-description: HT-Bio Module 6 Lab
+header2: Bioinformatics for Cancer Genomics 2019
+image: /site_images/CBW_cancerDNA_icon-16.jpg
+home: https://bioinformaticsdotca.github.io/BiCG_2019
+description: BiCG Module 5 Lab
 author: Jared Simpson
 modified: March 5th, 2019
 ---
