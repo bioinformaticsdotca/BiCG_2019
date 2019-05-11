@@ -1,12 +1,12 @@
 ---
 layout: tutorial_page
-permalink: /BiCG_2018_mod3_mapping
-title: BiCG Mod4 Lab - Mapping
+permalink: /BiCG_2019_Module4_lab
+title: BiCG
 header1: Workshop Pages for Students
-header2: Bioinformatics for Cancer Genomics 2018 Read Mapping Tutorial
+header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
-home: https://bioinformaticsdotca.github.io/bicg_2018
-description: BiCG Module 4 Lab-Mapping
+home: https://bioinformaticsdotca.github.io/BiCG_2019
+description: BiCG Module 4 Lab - Mapping
 author: Jared Simpson
 modified: March 13th, 2018
 ---
