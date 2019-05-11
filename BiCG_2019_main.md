@@ -210,7 +210,7 @@ Coming soon
 
 [Lab Lecture]()
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module11_lab)  
 
 ## Module 12: Integration of Clinical Data
 
