@@ -152,10 +152,6 @@ Coming soon
 
 [Lecture]()  
 
-## Integrated Assignment
-
-[Integrated Assignment]()  
-
 ***
 
 # Day 4 <a id="day4"></a>
@@ -192,11 +188,8 @@ Coming soon
 
 [Lecture]()  
 
-[Lab Practical - gProfiler](https://bioinformaticsdotca.github.io/bicg_2018_lab_8_gprofiler)  
+[Lab Practical - gProfiler](https://github.com/bioinformaticsdotca/BiCG_2019/Module10/BiCG_2019_Module10_Lab.pdf)  
 
-## Integrated Assignment
-
-[Integrated Assignment]()  
 
 ***
 
