@@ -101,7 +101,7 @@ Coming soon
 
 [Lecture]()  
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module4_lab)  
 
 ## Module 5: Genome Assembly
 
@@ -109,7 +109,9 @@ Coming soon
 
 [Lecture]()
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io//BiCG_2019_Module5_lab)  
+
+[Supplemental](https://bioinformaticsdotca.github.io/BiCG_2019_Module5_lab_supplemental)
 
 ## Module 6: Copy Number Variants
 
