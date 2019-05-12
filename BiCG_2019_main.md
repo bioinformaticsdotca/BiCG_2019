@@ -211,12 +211,12 @@ Coming soon
 
 [Lecture]()
 
-[Lab Practical](https://drive.google.com/a/bioinformatics.ca/file/d/1FZy349vf-e3G3MDeowRjNYDJJ-AwjeX7/view?usp=sharing)  
+[Lab Practical]()  
 
-[Lab Script](https://drive.google.com/a/bioinformatics.ca/file/d/1Wxz3BRWvu2iAFhJB-voz44mGSAZ0vI9l/view?usp=sharing)  
+[Lab Script](https://bioinformaticsdotca.github.io/Module12/BiCG_2019_Module12_Lab-participant-script.r)  
 
-[Data for lab part 1](https://github.com/bioinformaticsdotca/BiCG_2017/raw/master/module9/CBW-CancerGenomics-June2017-Lab-Data-Half1.RData)   
-[Data for lab part 2](https://github.com/bioinformaticsdotca/BiCG_2017/raw/master/module9/CBW-CancerGenomics-June2017-Lab-Data-Half2.RData)   
+[Data for lab part 1](https://drive.google.com/a/bioinformatics.ca/file/d/1XtKvfTTcIqBJAlkr652ktMnzgGFjYFOS/view?usp=sharing)   
+[Data for lab part 2](https://drive.google.com/a/bioinformatics.ca/file/d/1_BXD0O0NMiypKiO8Yq0gZD2_s_Lf-MFU/view?usp=sharing)   
 
 ## Recap
 
