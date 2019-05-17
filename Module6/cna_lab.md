@@ -1,12 +1,12 @@
 ---
 layout: tutorial_page
 permalink: /BiCG_2019_Module6_Lab
-title: BiCG Module 6 Lab
+title: BiCG 2019 Module 6 Lab
 header1: Workshop Pages for Students
 header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
 home: https://bioinformaticsdotca.github.io/BiCG_2019
-description: Lab Module 6-Copy Number Alterations
+description: BiCG 2019 Module 6 Lab - Copy Number Alterations
 author: Hamza Farooq
 Modified: March 15th, 2018
 ---
