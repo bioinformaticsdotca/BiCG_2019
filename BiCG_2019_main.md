@@ -133,7 +133,7 @@ Coming soon
 
 [Lab Lecture]()  
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab.md)  
 
 * [Installation](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_install)  
 * [Data Preprocessing](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_preprocessing)
@@ -144,7 +144,7 @@ Coming soon
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1loSEwod3wt-gs5xJF-RcgbeUHdSUls-U/view?usp=sharing)  
   
-[Lab Practical](https://bioinformaticsdotca.github.io/bicg_2018_lab_7)  
+[Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module7_Lab.md)  
 
 ## Module 8: Gene Expression Profiling 
 
