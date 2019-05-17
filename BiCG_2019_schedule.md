@@ -24,6 +24,7 @@ home: https://bioinformaticsdotca.github.io/BiCG_2019
 | 4:00 | Logging into the Cloud (Lu) | | | | |  
 | 4:30 | UNIX and R Review (Gibling) | | | | |  
 | 6:00 | Dinner | 5:00 | Dinner | 5:00 | Dinner |
+| | | (Optional to 7pm) | Integrated Assignment | (Optional to 7pm) | Integrated Assignment |
 
  **Days 4 - 5**
 
