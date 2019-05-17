@@ -1,6 +1,6 @@
 ---
 layout: tutorial_page
-permalink: /BiCG_Module6_Lab
+permalink: /BiCG_2019_Module6_Lab
 title: BiCG Module 6 Lab
 header1: Workshop Pages for Students
 header2: Bioinformatics for Cancer Genomics 2019
