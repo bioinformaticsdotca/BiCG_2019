@@ -11,7 +11,7 @@ author: Hamza Farooq
 Modified: March 15th, 2018
 ---
 
-# Table of Contents
+# Module 6 Lab - Copy Number Alterations
 
 * [Introduction](#introduction)
 * [Setup](#setup)
