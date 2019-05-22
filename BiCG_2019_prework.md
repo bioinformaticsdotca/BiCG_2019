@@ -41,6 +41,12 @@ It is in your best interest to complete these before the workshop.
 
 Before coming to the workshop, read these:
   
+  * [Database resources of the National Center for Biotechnology Information](http://www.ncbi.nlm.nih.gov/pubmed/26615191)
+
+  * [COSMIC: mining complete cancer genomes in the Catalogue of Somatic Mutations in Cancer](http://www.ncbi.nlm.nih.gov/pubmed/20952405/)
+
+  * [Cancer genome sequencing study design](http://www.ncbi.nlm.nih.gov/pubmed/23594910)
+
   * [Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration](http://www.ncbi.nlm.nih.gov/pubmed/22517427)
   
   * [Genome structural variation discovery and genotyping](http://www.ncbi.nlm.nih.gov/pubmed/21358748)
