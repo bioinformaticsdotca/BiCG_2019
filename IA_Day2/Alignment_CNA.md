@@ -1,6 +1,6 @@
 ---
 layout: tutorial_page
-permalink: /BiCG_IA_Day2
+permalink: /BiCG_2019_IA_Day2
 title: BiCG
 header1: Workshop Pages for Students
 header2: Bioinformatics for Cancer Genomics 2019
