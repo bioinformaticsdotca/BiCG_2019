@@ -1,19 +1,19 @@
 ---
 layout: tutorial_page
-permalink: /bicg_2018_ia2
+permalink: /BiCG_IA_Day2
 title: BiCG
-header1: Bioinformatics for Cancer Genomics 2018
-header2: Integrative Assignment Day 2
+header1: Workshop Pages for Students
+header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
-home: https://bioinformaticsdotca.github.io/bicg_2018
+home: https://bioinformaticsdotca.github.io/BiCG_2019
 description: Integrative Assignment Day 2
 author: Hamza Farooq
 modified: Marh 16th, 2018
 ---
 
-# Integrated Assignment - Overview of Day 2
+# Integrated Assignment - Day 2
 
-The following assignment will involve aligning a subset of reads from the the tumour and normal HCC1395 cell line samples to the human reference genome, and then perform copy number analysis on the samples. However, in this assignment, we'll be building all the indices of our reference genome as well perform perform the preprocessing for Titan. We will be following a similar procedure to the labs from Modules 5 and 6, including the `Data Preprocessing` sections, to properly process the samples. The analysis will be focused on chromosome 20 due to time constraints.
+The following assignment will involve aligning a subset of reads from the the tumour and normal HCC1395 cell line samples to the human reference genome, and then performing copy number analysis on the samples. However, in this assignment, we'll be building all the indices of our reference genome as well as performing the preprocessing for Titan. We will be following a similar procedure to the labs from Modules today, including the `Data Preprocessing` sections, to properly process the samples. The analysis will be focused on chromosome 20 due to time constraints.
 
 The fastq files for this assignment are stored in the following directory:
 
