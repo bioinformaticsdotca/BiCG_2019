@@ -121,7 +121,7 @@ Coming soon
 
 ## Integrative Assignment  
 
-[Assignment](https://bioinformaticsdotca.github.io/bicg_2018_ia2)
+[Assignment](https://bioinformaticsdotca.github.io/BiCG_2019_IA_Day2)
 
 ***
 
@@ -151,6 +151,10 @@ Coming soon
 *<font color="#827e9c">Florence Cavalli</font>* 
 
 [Lecture]()  
+
+## Integrative Assignment  
+
+[Assignment](https://bioinformaticsdotca.github.io/BiCG_2019_IA_Day3)
 
 ***
 
