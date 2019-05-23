@@ -1,26 +1,17 @@
 ---
 layout: tutorial_page
-permalink: /day4_integrative_assignment
+permalink: /BiCG_2019_IA_Day3
 title: BiCG
-header1: Bioinformatics for Cancer Genomics 2018
-header2: Day 4 - Integrative Assignment
+header1: Workshop Pages for Students
+header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
-home: https://bioinformaticsdotca.github.io/bicg_2018
+home: https://bioinformaticsdotca.github.io/BiCG_2019
+description: Integrative Assignment Day 3
+author: ??
+modified: May 23, 2019
 ---
 
-# Day 4 - Integrative Assignment
-
-## What did chmod 777 do?
-
-[This link](https://www.maketecheasier.com/file-permissions-what-does-chmod-777-means/) describes what the numbers mean. (Scroll to What’s about the number?). The number 7 is equivalent the binary number 1-1-1, which is interpreted by chmod as +r+w+x. It is repeated three times for the *u*ser, *g*roup, and *o*thers.
-
-The following two commands are equivalent:
-```
-chmod 777 $my_file
-
-chmod ugo+rwx $my_file
-```
-
+# Integrated Assignment - Day 3
 
 
 ## Installing programs without root access
