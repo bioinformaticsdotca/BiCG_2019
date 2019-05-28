@@ -102,7 +102,7 @@ bash Anaconda2-5.1.0-Linux-x86_64.sh
 
 Add conda to path
 ```
-export PATH="/home/ubuntu/software/anaconda/bin:$PATH"
+export PATH="/home/ubuntu/software/anaconda2/bin:$PATH"
 ```
 This line is what the conda installer offered to add to ~/.bashrc
 
@@ -153,7 +153,7 @@ Make a directory to work in
 Move there
 
 ```
-IA_HOME=/home/ubuntu/workspace/IA_thursday
+IA_HOME=/home/ubuntu/workspace/IA_wednesday
 mkdir -p $IA_HOME
 cd $IA_HOME
 ```
@@ -166,13 +166,14 @@ What does ANNOVAR do?
 
 The following command is what we ran yesterday.
 
-(Note that we would need to redefine our environmental variable $ANNOVAR_DIR for this command to work.)
+(Note that we would need to redefine our environmental variable $ANNOVAR_DIR for this command to work.) ie:ANNOVAR_DIR=/home/ubuntu/CourseData/CG_data/Module7/install/annovar
+Also your mutect_passed.vcf is probably in "/home/ubuntu/workspace/Module7_snv/results/mutect/mutect_passed.vcf"
 ```
 $ANNOVAR_DIR/table_annovar.pl \
 results/mutect/mutect_passed.vcf \
 $ANNOVAR_DIR/humandb/ \
 -buildver hg19 \
--out results/annotated/mutect \
+-out mutect \
 -remove \
 -protocol refGene,cytoBand,genomicSuperDups,1000g2015aug_all,avsnp147,dbnsfp30a \
 -operation g,r,r,f,f,f \
@@ -180,8 +181,11 @@ $ANNOVAR_DIR/humandb/ \
 --vcfinput
 ```
 
-
 Make environmental variables to refer to out input and output files:
+
+infile=$SNV_MODULE_DIR/results/mutect/mutect_passed.vcf
+out_file=$SNV_MODULE_DIR/results/mutect.hg19_multianno.vcf
+
 ```
 SNV_MODULE_DIR="/home/ubuntu/workspace/Module7_snv"
 in_file=$SNV_MODULE_DIR/results/mutect/mutect_passed.vcf
@@ -256,6 +260,7 @@ Can we visualize our specific SNPs in the context of other known SNPs?
 
 
 Use these commands to view very reduced summaries of our generated data.
+
 ```
 cat $SNV_MODULE_DIR/results/annotated/mutect.hg19_multianno.txt | cut -f1-3,7,9
 cat $SNV_MODULE_DIR/results/annotated/strelka.hg19_multianno.csv | cut -d , -f1-3,7,9
