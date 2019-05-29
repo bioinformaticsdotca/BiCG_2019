@@ -76,7 +76,7 @@ Coming soon
 
 *<font color="#827e9c">Zhibin Lu</font>*
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1nYEDsAAKKJH8S6LCg3885m7caLOFbUvM/view?usp=sharing)  
 
 [Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
 
