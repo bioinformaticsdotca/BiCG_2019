@@ -26,8 +26,8 @@ First, let's create a directory to hold our results:
 
 ```
 cd ~/workspace
-mkdir Module3-mapping
-cd Module3-mapping
+mkdir Module4-mapping
+cd Module4-mapping
 ```
 
 ## Mapping using bwa-mem
@@ -37,7 +37,7 @@ bwa mem is the leading algorithm for mapping short reads to a reference genome. 
 In the following command we provide bwa with the location of the reference genome - in this exercise we use the human reference genome prepared by the [1000 Genomes project](http://www.1000genomes.org/category/reference/) - and a FASTQ file containing the paired end reads for the tumour sample. In this case the paired end reads are in *interleaved* format where the two halves of a pair are in consecutive FASTQ records. The output file is in the SAM format. When mapping a whole-genome sequencing run it will take many hours to run - in this tutorial we only use a subset of the reads so this step doesn't take very long.
 
 ```
-bwa mem -t 4 -p ~/CourseData/CG_data/Module3/human_g1k_v37.fasta ~/CourseData/CG_data/Module3/reads.tumour.fastq > tumour.sam
+bwa mem -t 4 -p ~/CourseData/CG_data/Module4/human_g1k_v37.fasta ~/CourseData/CG_data/Module4/reads.tumour.fastq > tumour.sam
 ```
 
 In this command:  
@@ -119,7 +119,7 @@ There are 38 reads that show a "G" base at this position.
 The individual's genotype at this position is likely A/G.
 
 ```
-samtools mpileup -f ~/CourseData/CG_data/Module3/human_g1k_v37.fasta -r 9:14,196,087-14,196,087 tumour.sorted.bam
+samtools mpileup -f ~/CourseData/CG_data/Module4/human_g1k_v37.fasta -r 9:14,196,087-14,196,087 tumour.sorted.bam
 ```
 
 In this command, `-f` indicates our reference (in fasta format), `-r` specifies the region we want to look at.  
@@ -129,10 +129,10 @@ Load the data into IGV by performing the following:
 ```
    Open IGV
    Choose 'Load from URL' from the file menu
-   Type: http://##.oicrcbw.ca/Module3-mapping/tumour.sorted.bam where # is your student ID
+   Type: http://##.oicrcbw.ca/Module4-mapping/tumour.sorted.bam where # is your student ID
    Navigate to 9:14,196,087
 ```
 
 Notice that the alignments have high mapping quality.
 
-This is the end of the mapping tutorial. In the remaining time you can also map reads for the matched-normal sample for this cell line. The reads are in `~/CourseData/CG_data/Module3/reads.normal.fastq`.
+This is the end of the mapping tutorial. In the remaining time you can also map reads for the matched-normal sample for this cell line. The reads are in `~/CourseData/CG_data/Module4/reads.normal.fastq`.
