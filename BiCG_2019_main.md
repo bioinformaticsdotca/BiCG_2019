@@ -192,8 +192,11 @@ Coming soon
 
 [Lecture]()  
 
-[Lab Practical - gProfiler](https://github.com/bioinformaticsdotca/BiCG_2019/Module10/BiCG_2019_Module10_Lab.pdf)  
+[Lab Practical - gProfiler](https://drive.google.com/a/bioinformatics.ca/file/d/194nU0oofEfibcl8Kzt68qXTJyyt2hHWP/view?usp=sharing)  
 
+[Data Sets - Genelist_GBM.txt]()  
+[Data Sets - Genelist_KIRC.txt]()  
+[Data Sets - hsapiens.pathways.NAME.gmt]()  
 
 ***
 
