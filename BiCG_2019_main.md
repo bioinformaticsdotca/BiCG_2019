@@ -194,9 +194,9 @@ Coming soon
 
 [Lab Practical - gProfiler](https://drive.google.com/a/bioinformatics.ca/file/d/194nU0oofEfibcl8Kzt68qXTJyyt2hHWP/view?usp=sharing)  
 
-[Data Sets - Genelist_GBM.txt]()  
-[Data Sets - Genelist_KIRC.txt]()  
-[Data Sets - hsapiens.pathways.NAME.gmt]()  
+[Data Sets - Genelist_GBM.txt](https://bioinformaticsdotca.github.io/BiCG_2019/Module10/Genelist_GBM.txt)  
+[Data Sets - Genelist_KIRC.txt](https://bioinformaticsdotca.github.io/BiCG_2019/Module10/Genelist_KIRC.txt)  
+[Data Sets - hsapiens.pathways.NAME.gmt](https://bioinformaticsdotca.github.io/BiCG_2019/Module10/hsapiens.pathways.NAME.gmt)  
 
 ***
 
