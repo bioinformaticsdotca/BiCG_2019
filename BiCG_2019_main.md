@@ -178,7 +178,7 @@ Coming soon
 
 *<font color="#827e9c">Brian Haas</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1rP9bsGa1KLwHsf8708eXPahQJoF2Bnlg/view?usp=sharing)  
 
 [Lab Practical - CTAT Fusion Toolkit](https://bioinformaticsdotca.github.io/BiCG_2018_module9_star_fusion)
 
