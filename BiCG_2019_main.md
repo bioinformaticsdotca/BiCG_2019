@@ -99,7 +99,7 @@ Coming soon
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1EqkCZE8m9JDFYhtCT8mWM9EjagpacyGz/view?usp=sharing)  
 
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module4_lab)  
 
@@ -107,7 +107,7 @@ Coming soon
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1ZAi3xUAMCurnsiM-pFLvyHc6d5av5-v1/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io//BiCG_2019_Module5_lab)  
 
@@ -190,7 +190,7 @@ Coming soon
 
 *<font color="#827e9c">Jüri Reimand</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1KnkXPlwWztkdZdK9f62weEDYvyEBvrVA/view?usp=sharing)  
 
 [Lab Practical - gProfiler](https://drive.google.com/a/bioinformatics.ca/file/d/194nU0oofEfibcl8Kzt68qXTJyyt2hHWP/view?usp=sharing)  
 
