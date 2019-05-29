@@ -99,7 +99,7 @@ Coming soon
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1EqkCZE8m9JDFYhtCT8mWM9EjagpacyGz/view?usp=sharing)  
 
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module4_lab)  
 
@@ -107,7 +107,7 @@ Coming soon
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1ZAi3xUAMCurnsiM-pFLvyHc6d5av5-v1/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io//BiCG_2019_Module5_lab)  
 
@@ -135,14 +135,14 @@ Coming soon
 
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab)  
 
-* [Installation](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_install)  
-* [Data Preprocessing](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_preprocessing)
+* [Installation](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab-Installation)  
+* [Data Preprocessing](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab-DataProcessing)
 
 ## Module 7: Somatic Mutations and Annotations
 
 *<font color="#827e9c">Sorana Morrissy</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1loSEwod3wt-gs5xJF-RcgbeUHdSUls-U/view?usp=sharing)  
+[Lecture]()  
   
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module7_Lab)  
 
@@ -178,19 +178,17 @@ Coming soon
 
 *<font color="#827e9c">Brian Haas</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1YM4fh1CZNZHmUeITCfvw8y1-dKZPHxOj/view?usp=sharing)  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1rP9bsGa1KLwHsf8708eXPahQJoF2Bnlg/view?usp=sharing)  
 
-[Recording](https://youtu.be/TzjxFkDHO4M)
+[Lab Practical - CTAT Fusion Toolkit](https://bioinformaticsdotca.github.io/BiCG_2019_Module9_Lab-CTAT)
 
-[Lab Practical - CTAT Fusion Toolkit](https://bioinformaticsdotca.github.io/BiCG_2018_module9_star_fusion)
-
-[Lab Practical - DISCASM and GMAP-Fusion](https://bioinformaticsdotca.github.io/BiCG_2018_module9_discasm)
+[Lab Practical - DISCASM and GMAP-Fusion](https://bioinformaticsdotca.github.io/BiCG_2019_Module9_Lab-DISCASM)
 
 ## Module 10: Genes to Pathways
 
 *<font color="#827e9c">Jüri Reimand</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1KnkXPlwWztkdZdK9f62weEDYvyEBvrVA/view?usp=sharing)  
 
 [Lab Practical - gProfiler](https://drive.google.com/a/bioinformatics.ca/file/d/194nU0oofEfibcl8Kzt68qXTJyyt2hHWP/view?usp=sharing)  
 
@@ -220,7 +218,7 @@ Coming soon
 
 [Lab Practical]()  
 
-[Lab Script](https://bioinformaticsdotca.github.io/Module12/BiCG_2019_Module12_Lab-participant-script.r)  
+[Lab Script](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module12/BiCG_2019_Module12_Lab-participant-script.r)  
 
 [Data for lab part 1](https://drive.google.com/a/bioinformatics.ca/file/d/1XtKvfTTcIqBJAlkr652ktMnzgGFjYFOS/view?usp=sharing)   
 [Data for lab part 2](https://drive.google.com/a/bioinformatics.ca/file/d/1_BXD0O0NMiypKiO8Yq0gZD2_s_Lf-MFU/view?usp=sharing)   

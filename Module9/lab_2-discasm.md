@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /BiCG_2018_module9_discasm
-title: Bioinformatics for Cancer Genomics 2018 Gene Fusions Tutorial
-header1: Bioinformatics for Cancer Genomics 2018
-header2: Gene Fusions Tutorial - DISCASM and GMAP-Fusion
+permalink: /BiCG_2019_Module9_Lab-DISCASM
+title: BiCG
+header1: Workshop Pages for Students
+header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
-home: https://bioinformaticsdotca.github.io/bicg_2018
+home: https://bioinformaticsdotca.github.io/BiCG_2019
 ---
 
 # DISCASM and GMAP-Fusion Tutorial
