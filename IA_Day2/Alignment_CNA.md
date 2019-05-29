@@ -125,9 +125,9 @@ $PYTHON_DIR/bin/python $MUSEQ_DIR/preprocess.py \
 	normal:$IA_HOME/bams/HCC1395_norm.chr20.sorted.bam \
 	--verbose --single --coverage 4 --threshold 0.85 --buffer_size 2G \
 	--out $IA_HOME/mutationseq/HCC1395_mutationseq.vcf \
-	--log_file run_mutationseq.log \
+	--log_file $JOB_OUT/run_mutationseq.log \
 	--config $MUSEQ_DIR/metadata.config \
-	2> run_mutationseq.err
+	2> $JOB_OUT/run_mutationseq.err
 ```
 
 Once mutationseq is completed, we'll use our custom script to transform the vcf file to a counts file
