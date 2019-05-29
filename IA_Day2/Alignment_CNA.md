@@ -101,7 +101,7 @@ cd $IA_HOME;
 mkdir -p $IA_HOME/hmmcopy
 $HMMCOPY_DIR/bin/readCounter \
     -c 20 \
-    $IA_HOME/bams/HCC1395_norm.chr20.sorted.bam > $IA_HOME/hmmcopy/HCC1395_exome_tumour.wig
+    $IA_HOME/bams/HCC1395_tum.chr20.sorted.bam > $IA_HOME/hmmcopy/HCC1395_exome_tumour.wig
 $HMMCOPY_DIR/bin/readCounter \
     -c 20 \
     $IA_HOME/bams/HCC1395_norm.chr20.sorted.bam > $IA_HOME/hmmcopy/HCC1395_exome_normal.wig
