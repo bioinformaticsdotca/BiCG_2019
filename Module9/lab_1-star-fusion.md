@@ -1,6 +1,6 @@
 ---
 layout: tutorial_page
-permalink: /BiCG_2019_Module9_Lab
+permalink: /BiCG_2019_Module9_Lab-CTAT
 title: BiCG
 header1: Workshop Pages for Students
 header2: Bioinformatics for Cancer Genomics 2019
