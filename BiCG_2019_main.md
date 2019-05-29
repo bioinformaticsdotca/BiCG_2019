@@ -76,11 +76,11 @@ Coming soon
 
 *<font color="#827e9c">Zhibin Lu</font>*
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1nYEDsAAKKJH8S6LCg3885m7caLOFbUvM/view?usp=sharing)  
 
 [Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
 
-* We have set up instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download [this certificate](). Otherwise if you plan on using Windows (with Putty), please download [this certificate]().  
+* We have set up instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download CBWCG.pem from Slack; Otherwise if you plan on using Windows (with Putty), please download CBWCG.ppk from Slack.  
 
 ## Unix and R review
 
@@ -192,8 +192,11 @@ Coming soon
 
 [Lecture]()  
 
-[Lab Practical - gProfiler](https://github.com/bioinformaticsdotca/BiCG_2019/Module10/BiCG_2019_Module10_Lab.pdf)  
+[Lab Practical - gProfiler](https://drive.google.com/a/bioinformatics.ca/file/d/194nU0oofEfibcl8Kzt68qXTJyyt2hHWP/view?usp=sharing)  
 
+[Data Sets - Genelist_GBM.txt](https://bioinformaticsdotca.github.io/BiCG_2019/Module10/Genelist_GBM.txt)  
+[Data Sets - Genelist_KIRC.txt](https://bioinformaticsdotca.github.io/BiCG_2019/Module10/Genelist_KIRC.txt)  
+[Data Sets - hsapiens.pathways.NAME.gmt](https://bioinformaticsdotca.github.io/BiCG_2019/Module10/hsapiens.pathways.NAME.gmt)  
 
 ***
 
