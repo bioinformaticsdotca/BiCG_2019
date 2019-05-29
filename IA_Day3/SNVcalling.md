@@ -263,7 +263,7 @@ Use these commands to view very reduced summaries of our generated data.
 
 ```
 cat $SNV_MODULE_DIR/results/annotated/mutect.hg19_multianno.txt | cut -f1-3,7,9
-cat $SNV_MODULE_DIR/results/annotated/strelka.hg19_multianno.csv | sed 's/,/\t/g' | cut -d , -f1-3,7,9
+cat $SNV_MODULE_DIR/results/annotated/strelka.hg19_multianno.csv | cut -d , -f1-3,7,9
 ```
 
 How closely do the two SNV callers agree? What might explain the differences?
