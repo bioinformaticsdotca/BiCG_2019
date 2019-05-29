@@ -135,8 +135,8 @@ Coming soon
 
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab)  
 
-* [Installation](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_install)  
-* [Data Preprocessing](https://bioinformaticsdotca.github.io/bicg_2018_module6_lab_preprocessing)
+* [Installation](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab-Installation)  
+* [Data Preprocessing](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab-DataProcessing)
 
 ## Module 7: Somatic Mutations and Annotations
 
