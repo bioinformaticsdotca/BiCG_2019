@@ -180,9 +180,9 @@ Coming soon
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1rP9bsGa1KLwHsf8708eXPahQJoF2Bnlg/view?usp=sharing)  
 
-[Lab Practical - CTAT Fusion Toolkit](https://bioinformaticsdotca.github.io/BiCG_2018_module9_star_fusion)
+[Lab Practical - CTAT Fusion Toolkit](https://bioinformaticsdotca.github.io/BiCG_2019_Module9_Lab-CTAT)
 
-[Lab Practical - DISCASM and GMAP-Fusion](https://bioinformaticsdotca.github.io/BiCG_2018_module9_discasm)
+[Lab Practical - DISCASM and GMAP-Fusion](https://bioinformaticsdotca.github.io/BiCG_2019_Module9_Lab-DISCASM)
 
 ## Module 10: Genes to Pathways
 
