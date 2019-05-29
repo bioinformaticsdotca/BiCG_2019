@@ -32,8 +32,8 @@ First let's set up our working folder and create an environment variable to help
 ```
 cd ~/workspace
 mkdir IA_tuesday
-cd IA_tuesday
 IA_HOME=/home/ubuntu/workspace/IA_tuesday
+cd $IA_HOME
 mkdir jobs
 JOB_OUT=$IA_HOME/jobs
 ```
@@ -42,6 +42,7 @@ Now that we've setup our working directory, we can link our reference data and o
 
 ```
 ln -s ~/CourseData/CG_data/IA_tuesday/data
+ln -s ~/CourseData/CG_data/IA_tuesday/bams
 mkdir ref
 ln -s ~/CourseData/CG_data/IA_tuesday/refs/chr20_adj/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa ref/
 ```
@@ -101,7 +102,7 @@ mkdir -p $IA_HOME/hmmcopy
 $HMMCOPY_DIR/bin/readCounter \
     -c 20 \
     $IA_HOME/bams/HCC1395_norm.chr20.sorted.bam > $IA_HOME/hmmcopy/HCC1395_exome_tumour.wig
-    $HMMCOPY_DIR/bin/readCounter \
+$HMMCOPY_DIR/bin/readCounter \
     -c 20 \
     $IA_HOME/bams/HCC1395_norm.chr20.sorted.bam > $IA_HOME/hmmcopy/HCC1395_exome_normal.wig
 ```
