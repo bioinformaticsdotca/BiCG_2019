@@ -8,7 +8,7 @@ image: /site_images/CBW_cancerDNA_icon-16.jpg
 home: https://bioinformaticsdotca.github.io/BiCG_2019
 description: BiCG Module 4 Lab - Mapping
 author: Jared Simpson
-modified: March 13th, 2018
+modified: May 29th, 2019
 ---
 
 This tutorial was created by Jared Simpson.
