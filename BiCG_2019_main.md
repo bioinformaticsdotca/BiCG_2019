@@ -206,9 +206,9 @@ Coming soon
 
 *<font color="#827e9c">Robin Haw</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1iIOCHpM8ZTJuZMlS5TLeprWqHt-KVeWa/view?usp=sharing)
 
-[Lab Lecture]()
+[Lab Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/17qp2LpU-swPXJdTFUFnQrC81no09kpMS/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module11_lab)  
 
