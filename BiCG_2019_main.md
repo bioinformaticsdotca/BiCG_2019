@@ -142,7 +142,7 @@ Coming soon
 
 *<font color="#827e9c">Sorana Morrissy</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1loSEwod3wt-gs5xJF-RcgbeUHdSUls-U/view?usp=sharing)  
+[Lecture]()  
   
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module7_Lab)  
 
@@ -178,9 +178,7 @@ Coming soon
 
 *<font color="#827e9c">Brian Haas</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1YM4fh1CZNZHmUeITCfvw8y1-dKZPHxOj/view?usp=sharing)  
-
-[Recording](https://youtu.be/TzjxFkDHO4M)
+[Lecture]()  
 
 [Lab Practical - CTAT Fusion Toolkit](https://bioinformaticsdotca.github.io/BiCG_2018_module9_star_fusion)
 
