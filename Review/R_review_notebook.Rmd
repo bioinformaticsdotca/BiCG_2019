@@ -303,3 +303,5 @@ boxplot(gene_example[,2:3],
 ```
 
 If you don't specify a path in the pdf() function like we did above, the pdf will be saved in your working directory. In a new internet tab, go to http://##.oicrcbw.ca/Review_Session/myfigure.pdf to view the saved image.
+
+To save your RStudio notebook, go to "File" > "Save As..." and enter a name.

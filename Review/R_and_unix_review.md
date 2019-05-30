@@ -181,9 +181,11 @@ RStudio notebooks are written in R Markdown and contain text that can be execute
 
 To run code chunks, place your cursor within the code chunk and press *Cmd+Shift+Enter* on Mac or *Crtl+Shift+Enter* on Windows or Linux, or click the green triangle run button at the top right of the grey code chunk.  The output of the chunk appears below the code chunk.  
 
-To start a new notebook, `File -> New File -> R Notebook`.
+To start a new notebook, "File" > "New File" > "R Notebook". It will be populated with some information about notebooks--you can delete this info if you want.
 
-Copy the code [here](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Review/R_review_notebook.Rmd) into the notebook you have created, or copy and paste the code chunks below.
+Copy the code [here](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Review/R_review_notebook.Rmd) into the notebook you have created. 
+
+The code below is the same as the link above. If you'd prefer to work in an R script instead of an RStudio notebook, you can copy/paste what's in the code boxes. Note that if you don't want text notes to be interpreted as code, they have to start with `#`
 
 ### Getting Around
 
@@ -490,3 +492,5 @@ boxplot(gene_example[,2:3],
 ```
 
 If you don't specify a path in the pdf() function like we did above, the pdf will be saved in your working directory. In a new internet tab, go to http://##.oicrcbw.ca/Review_Session/myfigure.pdf to view the saved image.
+
+To save your RStudio notebook, go to "File" > "Save As..." and enter a name.
