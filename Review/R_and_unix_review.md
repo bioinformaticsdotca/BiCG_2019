@@ -29,94 +29,106 @@ Read these [directions](http://bioinformaticsdotca.github.io/AWS_setup) for info
 
 Basic commands:
 
-* ls: list the files in the directory  
-
+* ls: list the files in the directory:  
 ```
 ls
 ```
 
-* mkdir: make a new directory  
+* cd: change directories: 
+```
+cd workspace
+```
 
+* mkdir: make a new directory:  
 ```
 mkdir Review_Session
 ```
 
-* cd: change directories; 
+* `cd ..` will take you up one directory. Give it a try.
 
-```
-cd Review_Session
-```
-
-`cd ...` will take you up one directory.
-
-* pwd: print working directory 
-
+* pwd: print working directory (where you are currently located): 
 ```
 pwd
 ```
+You should be in `/home/ubuntu`. 
 
-* echo: print what it typed  
+* Let's move into the new directory we created:
+```
+cd workspace/Review_Session
+```
 
+* echo: print what was typed: 
+```
+echo 'Hello World!'
+```
+
+* `>` redirects the output from a command into a new file:  
 ```
 echo 'Hello World!' > test.txt
 ```
 
-* cat: print the contents of a file  
-
+* cat: print the contents of a file:  
 ```
 cat test.txt
 ```
 
-* curl: used to get contents from a URL  
-
+* curl: used to get contents from a URL:  
 ```
 curl https://raw.githubusercontent.com/bioinformaticsdotca/Genomic_Med_2017/master/test.fasta > test.fasta
 curl https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2017/master/Review_session/Gene_R_example.csv > Gene_R_Example.csv
 ```
 
-* head and tail: get the beginning or end of a file  
-
+* head and tail: get the beginning or end of a file:  
 ```
 head test.fasta
 tail test.fasta
 ```
 
-* less and more: look at the contents of a file  
-
+* less: look at the contents of a file in a new window (handy for looking at large files when you don't want to loose sight of your previous commands in the terminal):  
 ```
 less test.fasta
 ```
-
 To exit `less`, press `q`.
 
-* cp: copy 
-
+* cp: copy a file
 ```
 cp test.fasta test2.fasta
 ```
 
-* mv: move  
+* mv: move a file
+```
+mkdir test-files
+mv test2.fasta test-files
+ls
+ls test-files
+```
+You should only see test2.fa listed in the test-files directory. 
 
+* Let's move it back:
+```
+mv test-files/test2.fasta .
+```
+The single `.` refers to the current directory.
+
+* `mv` can also be used to rename files
 ```
 mv test2.fasta test3.fasta
+ls
 ```
+You should see test.fasta and test3.fasta, but not test2.fasta
 
-* rm: remove  
-
+* rm: remove files  
 ```
 rm test3.fasta
 ```
+Note: Removing files with `rm` permanently deletes them! You can using `rm -i` to avoid accidentally deleting a wanted file. This forces you to confirm by typing `y`.  
 
-Note: you should be using `rm -i` to avoid accidentally deleting a wanted file.  
-
-* grep: pattern matching
-
+* grep: search for a matching pattern in a file:
 ```
 grep TTT test.fasta
 ```
 
-You can use the pipe character `|` to string commands together:
-
+* |: You can use the pipe character `|` to string commands together:
 ```
 head test.fasta | grep TTT
 ```
