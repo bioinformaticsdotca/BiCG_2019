@@ -178,7 +178,7 @@ Coming soon
 
 *<font color="#827e9c">Brian Haas</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1rP9bsGa1KLwHsf8708eXPahQJoF2Bnlg/view?usp=sharing)  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1-VIw8id0GRsCBsvdgRZ_Dhvi3nlMjpW8/view?usp=sharing)  
 
 [Lab Practical - CTAT Fusion Toolkit](https://bioinformaticsdotca.github.io/BiCG_2019_Module9_Lab-CTAT)
 
@@ -188,7 +188,7 @@ Coming soon
 
 *<font color="#827e9c">Jüri Reimand</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1KnkXPlwWztkdZdK9f62weEDYvyEBvrVA/view?usp=sharing)  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1vrn16tmdrPfH8gSUL6Rl4SWoq6xgVmvU/view?usp=sharing)  
 
 [Lab Practical - gProfiler](https://drive.google.com/a/bioinformatics.ca/file/d/194nU0oofEfibcl8Kzt68qXTJyyt2hHWP/view?usp=sharing)  
 
