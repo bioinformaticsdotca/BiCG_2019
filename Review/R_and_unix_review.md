@@ -128,10 +128,21 @@ Note: Removing files with `rm` permanently deletes them! You can using `rm -i` t
 grep TTT test.fasta
 ```
 
-* |: You can use the pipe character `|` to string commands together:
+* You can use the pipe character `|` to string commands together:
 ```
 head test.fasta | grep TTT
 ```
+
+* history: prints out the \~1000 most recently commands that you entered:
+```
+history
+```
+
+**Useful tips:**
+
+* You can get commands that you previously used to reappear in the terminal by pressing the up arrow on your keyboard.
+* If you want to quickly delete everything that you typed in the terminal, or if you want to cancel a command that is taking a long time to run, hold `ctrl` and type `c`.
+
 
 ***
 
