@@ -214,7 +214,7 @@ Coming soon
 
 *<font color="#827e9c">Lauren Erdman</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1eM8iaL9MPzwNPL7DZ4WtOzTz4BHTe0v9/view?usp=sharing)
 
 [Lab Practical]()  
 
