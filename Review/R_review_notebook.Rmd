@@ -2,7 +2,7 @@
 
 #### The Hard Way
 
-```r
+```{r}
 # get the current working directory:
 getwd()
 
@@ -35,7 +35,7 @@ Vectors contain multiple pieces of data. The elements of a vector must all be of
 The `c()` function combines the items inside the round brackets and can be used to create a new vector.
 
 
-```r
+```{r}
 numeric.vector <- c(1,2,3,4,5,6,2,1)
 numeric.vector
 
@@ -50,7 +50,7 @@ To refer to specific elements in the vector, use square brackets.
 Because vectors are one dimensional (unlike a two-dimensional matrix), only a single number can be specified in the brackets.
 If you want more than one element, you can specify a range (with `:`) or a vector (with `c()`).
 
-```r
+```{r}
 character.vector
 character.vector[2]
 character.vector[2:3]
@@ -61,7 +61,7 @@ character.vector[c(2,4)]
 
 You can create a 3x4 numeric matrix with:
 
-```r
+```{r}
 matrix.example <- matrix(1:12, nrow = 3, ncol=4, byrow = FALSE)
 matrix.example
 
@@ -71,7 +71,7 @@ matrix.example
 
 Alternatively, you can create a matrix by combining vectors:
 
-```r
+```{r}
 dataset.a <- c(1,22,3,4,5)
 dataset.b <- c(10,11,13,14,15)
 dataset.a
@@ -89,7 +89,7 @@ To do this, a comma is used, where the number before the comma is the row number
 If you want to specify all of the rows, leave the space before the comma blank.
 If you want to specify all of the columns, leave the space after the comma blank.
 
-```r
+```{r}
 matrix.example[2,4]
 matrix.example[2,]
 matrix.example[,4]
@@ -97,7 +97,7 @@ matrix.example[,4]
 
 You can add column and row names to the matrix and use the new names to get the elements of the matrix:
 
-```r
+```{r}
 colnames(matrix.example) <- c("Sample1","Sample2","Sample3","Sample4")
 rownames(matrix.example) <- paste("gene",1:3,sep="_")
 matrix.example
@@ -114,7 +114,7 @@ Note that all columns in a matrix must have the same type(numeric, character, et
 
 Dataframes are similar to matrices, but different columns can have different types (numeric, character, factor, etc.).  
 
-```r
+```{r}
 people.summary <- data.frame(
                              age = c(30,29,25,25),
                              names = c("Fred", "Barney", "Wilma", "Betty"),
@@ -125,7 +125,7 @@ people.summary
 
 Getting elements of a dataframe is similar to getting elements of a matrix:
 
-```r
+```{r}
 people.summary[2,1]
 people.summary[2,]
 people.summary[,1]
@@ -133,7 +133,7 @@ people.summary[,1]
 
 An easier way to specify a dataframe column by name is by using `$`:
 
-```r
+```{r}
 people.summary$age
 ```
 
@@ -141,7 +141,7 @@ people.summary$age
 
 Lists gather together a collection of objects under one name.
 
-```r
+```{r}
 together.list <- list(
                       vector.example = dataset.a, 
                       matrix.example = matrix.example,
@@ -152,7 +152,7 @@ together.list
 
 There are several ways to get elements of a list:
 
-```r
+```{r}
 
 together.list$matrix.example
 together.list$matrix.example[,3]
@@ -165,7 +165,7 @@ together.list[["matrix.example"]][,2]
 
 We use `read.data` or `read.csv` to read in data.  
 
-```r
+```{r}
 gene_example <- read.csv("Gene_R_Example.csv")
 ```
 
@@ -173,7 +173,7 @@ In RStudio, we can use the "File" navigation window instead.  Navigate to the di
 
 Commands like `head` and `tail` also work in R. `View` will open the dataframe in a new window
 
-```r
+```{r}
 head(gene_example)
 View(gene_example)
 ```
@@ -182,14 +182,14 @@ View(gene_example)
 
 A very basic plot:
 
-```r
+```{r}
 plot(x=gene_example$Control, y=gene_example$Treated)
 ```
 
 You can specify how you want your plot to look, in terms of color, shape, labels, etc.
 A nicer plot:
 
-```r
+```{r}
 plot(x=gene_example$Control, y=gene_example$Treated,
     xlab = "Control",
     ylab = "Treated",
@@ -216,7 +216,7 @@ plot(x=gene_example$Control, y=gene_example$Treated,
 
 Connecting the dots:
 
-```r
+```{r}
 plot(x=gene_example$Control, y=gene_example$Treated,
     xlab = "Control",
     ylab = "Treated",
@@ -239,7 +239,7 @@ plot(x=gene_example$Control, y=gene_example$Treated,
 
 #### Histograms
 
-```r
+```{r}
 hist(gene_example$Control)
 
 hist(gene_example$Control,
@@ -255,11 +255,11 @@ hist(gene_example$Control,
 
 #### Boxplots
 
-```r
+```{r}
  boxplot(gene_example[,2:3])
 ```
 
-```r
+```{r}
 boxplot(gene_example[,2:3],
   width = c(3,1),
   col = "red",
@@ -273,7 +273,7 @@ boxplot(gene_example[,2:3],
 
 #### Saving your plots as PDFs
 
-```r
+```{r}
 pdf("myfigure.pdf", height=10, width=6)
 par(mfrow=c(2,1))
 
