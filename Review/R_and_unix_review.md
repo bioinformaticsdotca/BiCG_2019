@@ -5,6 +5,7 @@ title: BiCG Unix and R Review
 header1: Workshop Pages for Students
 header2: Bioinformatics for Cancer Genomics 2019
 image: /site_images/CBW_cancerDNA_icon-16.jpg
+author: ?, edited by Heather Gibling
 home: https://bioinformaticsdotca.github.io/BiCG_2019
 ---
 
@@ -121,7 +122,7 @@ You should see test.fasta and test3.fasta, but not test2.fasta
 ```
 rm test3.fasta
 ```
-Note: Removing files with `rm` permanently deletes them! You can using `rm -i` to avoid accidentally deleting a wanted file. This forces you to confirm by typing `y`.  
+Note: Removing files with `rm` **permanently deletes** them, so be careful! You can using `rm -i` to avoid accidentally deleting a wanted file. This forces you to confirm by typing `y`.  
 
 * grep: search for a matching pattern in a file:
 ```
@@ -152,19 +153,37 @@ history
 
 * Open an internet browser.  
 * In the URL bar, enter *http://##.oicrcbw.ca:8080* replacing *xx* with your provided student number.  
-* Enter the supplied username and password.  
+* Enter the supplied username and password.
+
+### Navigating RStudio
+
+RStudio is an interactive program for reading and writing R code. It is divided into four panes that can be resized and rearranged to your preference:
+* Source
+* Environment, History, and Connections
+* Console
+* Files, Plots, Help, and Viewer
+
+The *console* pane is similar to the bash/unix/terminal console. You can enter code here and see output, but you can't save the code you've written. It's useful for checking quick things, like the size of a list of genes.
+
+The *source* pane is where you write and edit scripts or RStudio notebooks (where you write code that you want to save). You can select code to run and the results will show up in the console (as well as the source, if you are using a notebook).
+
+The *environment, history, and connections* pane gives an overview of what items you have entered in your R session (*environment*) and the history of commands you've typed (*history*). (We don't need to worry about the *connections* tab)
+
+The *files, plots, packages, help, and viewer* pane lets you navigate folder and load files (*files*), view images you've created (*plots*), see what packages have been installed and loaded in your R session (*packages*), and look at help files for specific packages and functions (*help*). (We don't need to worry about the *viewer* tab)
+
+If you are not sure what a specific function does, or if you need a reminder on what the arguments for a funtion are, you can view the help page by typing `?function_name`. For example, look up the help page for the plot() function by typing `?plot` into the console.
 
 ### RStudio Notebooks
 
 Information on RStudio Notebooks can be found [here](http://rmarkdown.rstudio.com/r_notebooks.html).  
 
-RStudio notebooks are written in R Markdown and contain text that can be executed independently.
+RStudio notebooks are written in R Markdown and contain text that can be executed independently.  
 
-To start a new notebook, `File -> New File -> R Notebook`.  
+To run code chunks, place your cursor within the code chunk and press *Cmd+Shift+Enter* on Mac or *Crtl+Shift+Enter* on Windows or Linux, or click the green triangle run button at the top right of the grey code chunk.  The output of the chunk appears below the code chunk.  
 
-To run code chunks, place your cursor within the code chunk and press *Cmd+Shift+Enter* on Mac and  *Crtl+Shift+Enter* or click the green triangle run button.  The output of the chunk appears below the code chunk.  
+To start a new notebook, `File -> New File -> R Notebook`.
 
-Copy the code [here](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2017/master/Review_session/R_review_notebook.Rmd) into the notebook you have created.
+Copy the code [here](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Review/R_review_notebook.Rmd) into the notebook you have created, or copy and paste the code chunks below.
 
 ### Getting Around
 
@@ -173,23 +192,35 @@ Copy the code [here](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_
 ```r
 # get the current working directory:
 getwd()
+
 # set a new working directory:
-setwd("C:/myPATH")
-setwd("~/myPATH") # on Mac
-setwd("/Users/david/myPATH") # on Mac
+setwd("~/workspace/Review_Session")
+
+# to set a working directory on your own computer, you can do one of the following:
+# (these commands are commented out so that these code chunks will run on AWS RStudio)
+
+# setwd("C:/myPATH") # on Windows
+# setwd("~/myPATH") # on Mac
+# setwd("/Users/david/myPATH") # on Mac
+
 # list the files in the current working directory:
 list.files()
+
 # list objects in the current R session:
 ls()
 ```
 
 #### The Easy Way
 
-In RStudio we can use "Session" > "Set Working Directory".  
+In RStudio we can use "Session" > "Set Working Directory" > "Choose Directory".  
   
 ### Data Types
 
 #### Vectors
+
+Vectors contain multiple pieces of data. The elements of a vector must all be of the same type (numeric, logical, character).
+The `c()` function combines the items inside the round brackets and can be used to create a new vector.
+
 
 ```r
 numeric.vector <- c(1,2,3,4,5,6,2,1)
@@ -202,7 +233,9 @@ logical.vector <- c(TRUE, TRUE, FALSE, TRUE)
 logical.vector
 ```
 
-To refer to elements in the vector:
+To refer to specific elements in the vector, use square brackets.
+Because vectors are one dimensional (unlike a two-dimensional matrix), only a single number can be specified in the brackets.
+If you want more than one element, you can specify a range (with `:`) or a vector (with `c()`).
 
 ```r
 character.vector
@@ -237,7 +270,11 @@ rbind.together
 cbind.together <- cbind(dataset.a, dataset.b)
 cbind.together
 ```
-To get elements of the matrix:
+
+To get elements of the matrix, square brackets are used again, but two dimensions must be specified.
+To do this, a comma is used, where the number before the comma is the row number and the number after the comma is the column number.
+If you want to specify all of the rows, leave the space before the comma blank.
+If you want to specify all of the columns, leave the space after the comma blank.
 
 ```r
 matrix.example[2,4]
@@ -257,11 +294,12 @@ matrix.example[1,"Sample2"]
 matrix.example["gene_1","Sample2"]
 ```
 
-Note that all columns in a matrix must have the same mode(numeric, character, etc.) and the same length.
+Note that all columns in a matrix must have the same type(numeric, character, etc.) and the same length.
+
 
 #### Dataframes
 
-Dataframes are similar to arrays but different columns can have different modes (numeric, character, factor, etc.).  
+Dataframes are similar to matrices, but different columns can have different types (numeric, character, factor, etc.).  
 
 ```r
 people.summary <- data.frame(
@@ -272,12 +310,17 @@ people.summary <- data.frame(
 people.summary
 ```
 
-To get elements of the dataframe:
+Getting elements of a dataframe is similar to getting elements of a matrix:
 
 ```r
 people.summary[2,1]
 people.summary[2,]
 people.summary[,1]
+```
+
+An easier way to specify a dataframe column by name is by using `$`:
+
+```r
 people.summary$age
 ```
 
@@ -310,12 +353,12 @@ together.list[["matrix.example"]][,2]
 We use `read.data` or `read.csv` to read in data.  
 
 ```r
-gene_example <- read_csv("Gene_R_example.csv")
+gene_example <- read.csv("Gene_R_Example.csv")
 ```
 
 In RStudio, we can use the "File" navigation window instead.  Navigate to the directory containing the Gene_R_example.csv that we downloaded previously. Click on the file name then click "Import Dataset."  A new window appears allowing you to modify attributes of your file.  Rename the file to the object "gene_example".
 
-Commands like `head` and `tail` also work in R.
+Commands like `head` and `tail` also work in R. `View` will open the dataframe in a new window
 
 ```r
 head(gene_example)
@@ -330,6 +373,7 @@ A very basic plot:
 plot(x=gene_example$Control, y=gene_example$Treated)
 ```
 
+You can specify how you want your plot to look, in terms of color, shape, labels, etc.
 A nicer plot:
 
 ```r
@@ -343,18 +387,18 @@ plot(x=gene_example$Control, y=gene_example$Treated,
     col = "dark blue",
     las = 1
     )
-## las
-## How to change the axes label style in R
-## To change the axes label style, use the graphics option las (label style). This changes the orientation angle of the labels:
-## 0: The default, parallel to the axis
-## 1: Always horizontal
-## 2: Perpendicular to the axis
-## 3: Always vertical
 
-## bty
-## To change the type of box round the plot area, use the option bty (box type):
-## "o": The default value draws a complete rectangle around the plot.
-## "n": Draws nothing around the plot.
+# las
+# To change the axes label style, use the graphics option las (label style). This changes the orientation angle of the labels:
+# 0: The default, parallel to the axis
+# 1: Always horizontal
+# 2: Perpendicular to the axis
+# 3: Always vertical
+
+# bty
+# To change the type of box round the plot area, use the option bty (box type):
+# "o": The default value draws a complete rectangle around the plot.
+# "n": Draws nothing around the plot.
 ```
 
 Connecting the dots:
@@ -368,9 +412,16 @@ plot(x=gene_example$Control, y=gene_example$Treated,
     pch = 16,
     bty = "n",
     col = "dark blue",
-	type = "b",
-	las = 1
-	)
+    type = "b",
+    las = 1
+    )
+
+# type
+# The 'type' option changes what the data points are plotted with.
+# "p": points
+# "l": lines
+# "b": both (points and lines)
+# for more options, see the plot() help page
 ```
 
 #### Histograms
