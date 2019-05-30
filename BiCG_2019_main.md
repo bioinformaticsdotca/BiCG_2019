@@ -117,7 +117,7 @@ Coming soon
 
 *<font color="#827e9c">Sorana Morrissy</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1-SYXqc5LUsLeOS6UVeoSYUE4Moht2OPF/view?usp=sharing)  
 
 ## Integrative Assignment  
 
@@ -142,7 +142,7 @@ Coming soon
 
 *<font color="#827e9c">Sorana Morrissy</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1bqVw3HtBiOytAX_GuhZV_fZ5l6BxoQWO/view?usp=sharing)  
   
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module7_Lab)  
 
