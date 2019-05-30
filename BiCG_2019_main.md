@@ -19,7 +19,8 @@ The course schedule can be found [here](https://bioinformaticsdotca.github.io/Bi
 
 Meet your faculty [here](https://drive.google.com/a/bioinformatics.ca/file/d/1hDpqptFM_kjnTTnqJGgujhzbNcqF-Qua/view?usp=sharing)
 
-**CLASS MATERIALS:** You can download the printed course manual [here]().  
+**CLASS MATERIALS:** You can download the printed course manual [here](https://drive.google.com/a/bioinformatics.ca/file/d/1vup2l9AEEg7N7S180k8KbLfSzkmzIUsg/view?usp=sharing).  
+If you would like to receive a print copy of Lecture 1 email Trevor (trevor.pugh@utoronto.ca) or Lecture 3 email Francis (francis@bioinformatics.ca).
 
 ***
 
