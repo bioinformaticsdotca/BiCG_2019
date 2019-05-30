@@ -41,7 +41,7 @@ For convenience, we'll make symbolic links to the data sets that we'll work with
 
 
 ```
-ls ~/CourseData/Module5/ecoli* | xargs -i ln -s {}
+ls ~/CourseData/CG_data/Module5/ecoli* | xargs -i ln -s {}
 ```
 
 If you run `ls` you should now be able to see three files of sequencing data.
@@ -109,7 +109,7 @@ The accuracy of the genome assembly is determined by how many misassemblies (lar
 Run QUAST on your three E. coli assemblies by running this command:
 
 ```
-quast.py -R ~/CourseData/Module5/references/ecoli_k12.fasta assemblies/*.fasta
+quast.py -R ~/CourseData/CG_data/Module5/references/ecoli_k12.fasta assemblies/*.fasta
 ```
 
 Using the web browser for your instance, open the QUAST PDF report (Module5/quast_results/latest/report.pdf) and try to determine which of the assemblies was a) the most complete b) the most contiguous and c) the most accurate.
@@ -133,7 +133,7 @@ cp ecoli_medaka_polished/consensus.fasta assemblies/ecoli.nanopore.100x.canu-con
 Now, re-run the QUAST step from above:
 
 ```
-quast.py -R ~/CourseData/Module5/references/ecoli_k12.fasta assemblies/*.fasta
+quast.py -R ~/CourseData/CG_data/Module5/references/ecoli_k12.fasta assemblies/*.fasta
 ```
 
 The report will be updated in Module5/quast_results/latest/report.pdf (all versions will also be stored in their own time-stamped directories in Module5/quast_results). Did the quality of your nanopore assembly improve?
