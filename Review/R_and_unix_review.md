@@ -171,8 +171,6 @@ The *environment, history, and connections* pane gives an overview of what items
 
 The *files, plots, packages, help, and viewer* pane lets you navigate folder and load files (*files*), view images you've created (*plots*), see what packages have been installed and loaded in your R session (*packages*), and look at help files for specific packages and functions (*help*). (We don't need to worry about the *viewer* tab)
 
-If you are not sure what a specific function does, or if you need a reminder on what the arguments for a funtion are, you can view the help page by typing `?function_name`. For example, look up the help page for the plot() function by typing `?plot` into the console.
-
 ### RStudio Notebooks
 
 Information on RStudio Notebooks can be found [here](http://rmarkdown.rstudio.com/r_notebooks.html).  
@@ -186,6 +184,33 @@ To start a new notebook, "File" > "New File" > "R Notebook". It will be populate
 Copy the code [here](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Review/R_review_notebook.Rmd) into the notebook you have created. 
 
 The code below is the same as the link above. If you'd prefer to work in an R script instead of an RStudio notebook, you can copy/paste what's in the code boxes. Note that if you don't want text notes to be interpreted as code, they have to start with `#`
+
+### Intro to R
+
+R is used to manipulate various kinds of data. Data objects can be given names, called variables:
+
+```r
+5 + 6
+
+number1 <- 5
+number2 <- 6
+number1 + number2
+number.sum <- number1 + number2
+
+# print the content of a data object or variable to screen
+print(number.sum)
+
+# typing just the name of the object also prints it to screen
+number.sum
+```
+
+Data in R are manipulated primarily with functions. Functions are called by typing the name of the function followed by round brackets. Most functions require arguments, or options, to be specified in the brackets. For `print(number)` used above, `print` is the name of the function, and `number.sum` is the variable option that we want to print.
+
+If you are not sure what a specific function does, or if you need a reminder on what the arguments for a funtion are, you can view the help page by typing `?function.name` without the round brackts:
+
+```r
+?print
+```
 
 ### Getting Around
 
@@ -460,7 +485,7 @@ boxplot(gene_example[,2:3],
 	)
 ```
 
-#### Saving your plots as PDFs
+### Saving your plots as PDFs
 
 ```r
 pdf("myfigure.pdf", height=10, width=6)
