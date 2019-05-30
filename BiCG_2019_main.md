@@ -150,7 +150,7 @@ Coming soon
 
 *<font color="#827e9c">Florence Cavalli</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Q43wMam7v6Fp9upPcf071UPuUAL08l8V/view?usp=sharing)  
 
 ## Integrative Assignment  
 
