@@ -301,3 +301,5 @@ boxplot(gene_example[,2:3],
   
   dev.off()
 ```
+
+If you don't specify a path in the pdf() function like we did above, the pdf will be saved in your working directory. In a new internet tab, go to http://##.oicrcbw.ca/Review_Session/myfigure.pdf to view the saved image.

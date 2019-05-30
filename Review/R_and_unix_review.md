@@ -152,7 +152,7 @@ history
 ### Connecting To RStudio
 
 * Open an internet browser.  
-* In the URL bar, enter *http://##.oicrcbw.ca:8080* replacing *xx* with your provided student number.  
+* In the URL bar, enter *http://##.oicrcbw.ca:8080* replacing *##* with your provided student number.  
 * Enter the supplied username and password.
 
 ### Navigating RStudio
@@ -488,3 +488,5 @@ boxplot(gene_example[,2:3],
   
   dev.off()
 ```
+
+If you don't specify a path in the pdf() function like we did above, the pdf will be saved in your working directory. In a new internet tab, go to http://##.oicrcbw.ca/Review_Session/myfigure.pdf to view the saved image.
