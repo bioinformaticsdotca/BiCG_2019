@@ -248,7 +248,7 @@ In RStudio we can use "Session" > "Set Working Directory" > "Choose Directory".
 #### Vectors
 
 Vectors contain multiple pieces of data. The elements of a vector must all be of the same type (numeric, logical, character).
-The `c()` function combines the items inside the round brackets and can be used to create a new vector.
+The `c()` function combines the items inside the round brackets and can be used to create a new vector:
 
 
 ```r
@@ -264,7 +264,7 @@ logical.vector
 
 To refer to specific elements in the vector, use square brackets.
 Because vectors are one dimensional (unlike a two-dimensional matrix), only a single number can be specified in the brackets.
-If you want more than one element, you can specify a range (with `:`) or a vector (with `c()`).
+If you want more than one element, you can specify a range (with `:`) or a vector (with `c()`):
 
 ```r
 character.vector
@@ -303,7 +303,7 @@ cbind.together
 To get elements of the matrix, square brackets are used again, but two dimensions must be specified.
 To do this, a comma is used, where the number before the comma is the row number and the number after the comma is the column number.
 If you want to specify all of the rows, leave the space before the comma blank.
-If you want to specify all of the columns, leave the space after the comma blank.
+If you want to specify all of the columns, leave the space after the comma blank:
 
 ```r
 matrix.example[2,4]
@@ -328,7 +328,7 @@ Note that all columns in a matrix must have the same type(numeric, character, et
 
 #### Dataframes
 
-Dataframes are similar to matrices, but different columns can have different types (numeric, character, factor, etc.).  
+Dataframes are similar to matrices, but different columns can have different types (numeric, character, factor, etc.): 
 
 ```r
 people.summary <- data.frame(
@@ -355,7 +355,7 @@ people.summary$age
 
 #### Lists
 
-Lists gather together a collection of objects under one name.
+Lists gather together a collection of objects under one name:
 
 ```r
 together.list <- list(
@@ -379,7 +379,7 @@ together.list[["matrix.example"]][,2]
 
 ### Reading Data In
 
-We use `read.data` or `read.csv` to read in data.  
+We use `read.data` or `read.csv` to read in data:
 
 ```r
 gene_example <- read.csv("Gene_R_Example.csv")
@@ -387,7 +387,7 @@ gene_example <- read.csv("Gene_R_Example.csv")
 
 In RStudio, we can use the "File" navigation window instead.  Navigate to the directory containing the Gene_R_example.csv that we downloaded previously. Click on the file name then click "Import Dataset."  A new window appears allowing you to modify attributes of your file.  Rename the file to the object "gene_example".
 
-Commands like `head` and `tail` also work in R. `View` will open the dataframe in a new window
+Commands like `head` and `tail` also work in R. `View` will open the dataframe in a new window:
 
 ```r
 head(gene_example)
