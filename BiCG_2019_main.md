@@ -20,7 +20,8 @@ The course schedule can be found [here](https://bioinformaticsdotca.github.io/Bi
 Meet your faculty [here](https://drive.google.com/a/bioinformatics.ca/file/d/1hDpqptFM_kjnTTnqJGgujhzbNcqF-Qua/view?usp=sharing)
 
 **CLASS MATERIALS:** You can download the printed course manual [here](https://drive.google.com/a/bioinformatics.ca/file/d/1vup2l9AEEg7N7S180k8KbLfSzkmzIUsg/view?usp=sharing).  
-If you would like to receive a print copy of Lecture 1 email Trevor (trevor.pugh@utoronto.ca) or Lecture 3 email Francis (francis@bioinformatics.ca).
+[Lecture 1 from Trevor](https://drive.google.com/a/bioinformatics.ca/file/d/14BKDblLxkEmW0uNsii2k2Qowm6mdRR32/view?usp=sharing)  
+[Lecture 3 from Francis](https://drive.google.com/a/bioinformatics.ca/file/d/15fHenhZcq6-sIz2AZDfFgousrRx3QFpE/view?usp=sharing)
 
 ***
 
@@ -53,19 +54,19 @@ Coming soon
 
 *<font color="#827e9c">Trevor Pugh</font>* 
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1OyCX2VaVBc0ItS_HLrPz_AtrEwJ-id5f/view?usp=sharing)  
 
 ## Module 2: Ethics of Data Usage and Security
 
 *<font color="#827e9c">Mark Phillips</font>*
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/14Qvm4muPMuLKFY8gsJisNmthOneQTM7V/view?usp=sharing)
 
 ## Module 3: Databases and Visualization Tools
 
 *<font color="#827e9c">Francis Ouellette</font>* 
 
-[Lecture]() 
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1H4LKxa4CoQ4BVduV_O2KsBFzcfUdJPfE/view?usp=sharing) 
 
 ## Module 3 Lab: IGV
 
