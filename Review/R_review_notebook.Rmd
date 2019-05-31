@@ -25,11 +25,13 @@ number.sum
 
 Data in R are manipulated primarily with functions. Functions are called by typing the name of the function followed by round brackets. Most functions require arguments, or options, to be specified in the brackets. For `print(number)` used above, `print` is the name of the function, and `number.sum` is the variable option that we want to print.
 
-If you are not sure what a specific function does, or if you need a reminder on what the arguments for a funtion are, you can view the help page by typing `?function.name` without the round brackts:
+If you are not sure what a specific function does, or if you need a reminder on what the arguments for a funtion are, you can view the help page by typing `?function.name` without the round brackets:
 
 ```{r}
 ?print
 ```
+
+Note: The help page will open in the "Help" tab in the Files/Plots/Packages/Help/Viewer pane.
 
 ### Getting Around
 
