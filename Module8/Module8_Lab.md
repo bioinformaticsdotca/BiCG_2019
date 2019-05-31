@@ -13,8 +13,11 @@ modified: May 30th, 2019
 
 # Lab Module 8 - Gene Expression
 
-Background: The PCA3 gene plays a role in Prostate Cancer detection due to its localized expression in prostate tissues and its over-expression in tumour tissues. This gene expression profile makes it a useful marker that can complement the most frequently used biomarker for prostate cancer, PSA. There are cancer assays available that test the presence of PCA3 in urine. 
-Objectives: In this assignment, we will be using a subset of the GSE22260 dataset, which consists of 30 RNA-seq tumour/normal pairs, to assess the prostate cancer specific expression of the PCA3 gene. 
+##Background
+The PCA3 gene plays a role in Prostate Cancer detection due to its localized expression in prostate tissues and its over-expression in tumour tissues. This gene expression profile makes it a useful marker that can complement the most frequently used biomarker for prostate cancer, PSA. There are cancer assays available that test the presence of PCA3 in urine. 
+
+##Objectives
+In this assignment, we will be using a subset of the GSE22260 dataset, which consists of 30 RNA-seq tumour/normal pairs, to assess the prostate cancer specific expression of the PCA3 gene. 
 Experimental information and other things to keep in mind:
 - The libraries are polyA selected. 
 - The libraries are prepared as paired end. 
@@ -83,10 +86,13 @@ What if this reference file was not provided for you? How would you obtain/creat
 Q2) How many exons does the gene PCA3 have?
 
 A2) The answer is 4. Review the GTF file so that you are familiar with it. What downstream steps will we need this file for? What is it used for?
+
+```
 cd $RNA_LAB/refs
 grep -w "PCA3" Homo_sapiens.GRCh38.86.chr9.gtf
 grep -w "PCA3" Homo_sapiens.GRCh38.86.chr9.gtf | egrep "exon"
 grep -w "PCA3" Homo_sapiens.GRCh38.86.chr9.gtf | egrep "exon" |wc -l
+```
 
 Q3) How many cancer/normal samples do you see under the data directory?
 
