@@ -498,19 +498,20 @@ We ran Titan on the whole-genome `.bam` files from these three tumours, with thr
 
 ```bash
 cp /home/ubuntu/CourseData/CG_data/Module6/module6_cna_plots.zip $CNA_WORKSPACE
+cd $CNA_WORKSPACE
 unzip module6_cna_plots.zip
 ```
 
 You can then download the entire zip file or individual plots from your browser (XX is your student number):
 
 ```bash
-http://##.oicrcbw.ca/Module6/module4_cna_plots
+http://##.oicrcbw.ca/Module6/module6_cna_plots
 ```
 
 Titan uses the expectation-maximization (EM) algorithm to find the most likely values of the parameters. When given a more complex model (i.e. more clusters), this approach can over-fit and assign higher likelihood to runs with more clusters. So in order to choose the number of clusters, it is recommended not just to look at the likelihood, but at the DBW validity index which Titan provides at the end of the parameter file (lower index values are better):
 
 ```bash
-less $CNA_WORKSPACE/module4_cna_plots/SA501/SA501T-49X/SA501T-49X_cluster1_params.txt
+less module6_cna_plots/SA501/SA501T-49X/SA501T-49X_cluster1_params.txt
 ```
 
 ```
@@ -536,7 +537,7 @@ S_Dbw validity index (Both):	0.0417
 We summarized the results of the three runs with different cluster numbers in the optimal clusters file:
 
 ```bash
-less $CNA_WORKSPACE/module4_cna_plots/SA501/SA501T-49X/SA501T-49X_titan_optimal_clusters.txt
+less module6_cna_plots/SA501/SA501T-49X/SA501T-49X_titan_optimal_clusters.txt
 ```
 
 ```
@@ -554,7 +555,7 @@ You can see that Titan predicts one major copy number population in this patient
 Now take a look at the summary file for the xenograft tumour SA501X3F:
 
 ```bash
-less $CNA_WORKSPACE/module4_cna_plots/SA501/SA501X3F-23X/SA501X3F-23X_titan_optimal_clusters.txt
+less module6_cna_plots/SA501/SA501X3F-23X/SA501X3F-23X_titan_optimal_clusters.txt
 ```
 
 ```
