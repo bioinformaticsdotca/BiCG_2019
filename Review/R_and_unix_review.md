@@ -32,8 +32,12 @@ The unix terminal/shell/bash console is a text interface for interacting with a 
 
 A lot of biological data files are very large, and running them on your laptop is not feasible. Researchers use very large computer clusters or cloud computing in order to generate, manipulate, store, and view data files. These clusters are accessed remotely from another computer, such as your laptop. Because these clusters generally require use of the unix terminal in order to perform these actions, a lot of bioinformatics software is written specifically for use in a unix terminal. Therefore it is helpful to learn the basics of navigating and using a terminal.
 
-You can't use a mouse and click--everything is done by typing. If you make a typo while typing a command, you need to use the arrow keys to navigate to the position in order to edit.
+You can't use a mouse and click to move the cursor--everything is done by typing. If you make a typo while typing a command, you need to use the arrow keys to navigate to the position in order to edit. A short cut to jump to the beginning of the line is `ctrl + a`, and `ctrl + e` will jump to the end of the line.
 
+You can use the mouse to select and highlight text to copy/paste. To copy/paste within the terminal, you can do the following:
+* Mac: `cmd + c` and `cmd + v`
+* Windows: highlight text and click the right mouse button
+* Linux: `ctrl + shift + c` and `ctrl + shift + v`
 
 ### Basic commands:
 
