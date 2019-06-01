@@ -205,7 +205,7 @@ more carcinoma_C02.flagstat.txt
 grep "mapped (" *.flagstat.txt
 ```
 
-Note: * **more** is a unix command to view the content of a file on screen. Press enter to see more lines. Press "q" to exit*
+Note: ***more** is a unix command to view the content of a file on screen. Press enter to see more lines. Press "q" to exit*
 
 ## PART 3: Expression Estimation
 Goals:
