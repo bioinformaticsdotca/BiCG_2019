@@ -284,5 +284,4 @@ https://www.bioconductor.org/packages/release/bioc/html/ballgown.html
 
 **see attached [Module8_Lab_plots.R](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_plots.R) for plotting options
 
-<a download href="https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_plots.R">Download test</a>
 
