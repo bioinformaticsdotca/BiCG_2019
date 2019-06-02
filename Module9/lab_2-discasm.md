@@ -241,7 +241,7 @@ How do the genomic breakpoints compare to the fusion-transcript breakpoints?  Wh
 Search the de novo reconstructed transcripts for evidence of viruses using the Centrifuge software along with the database of viral sequences provided.
 
     % centrifuge -x centrifuge_VirusDB/abv -f \
-                 -U discasm/trinity_out_dir/Trinity.fasta \
+                 -U discasm/discasm.Trinity.fasta \
                   > centrifuge.matches.txt
 
 The above will identify transcripts with sequence matches to known viruses, with the matches provided in the 'centrifuge.matches.txt' file, and summarizes the findings in a file 'centrifuge_report.tsv'.
