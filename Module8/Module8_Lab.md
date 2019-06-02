@@ -269,8 +269,9 @@ more carcinoma_vs_normal.csv
 R
 ```
 
-The file assignment_ballgown.R will help you to run differential expression analysis with the Ballgown package
-Also have a look at the Ballgrown package and manual
+The file [Module8_Lab_ballgown.R](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_ballgown.R) will help you to run differential expression analysis with the Ballgown package.
+
+Have a look at the Ballgrown package and manual document as well
 https://www.bioconductor.org/packages/release/bioc/html/ballgown.html
 
 **Q8)** Are there any significant differentially expressed genes? What about PCA3? 
