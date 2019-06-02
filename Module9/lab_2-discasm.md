@@ -77,7 +77,7 @@ The following tutorial will take you through preparing the above provided genome
 
 Run the following to prepare the genome and annotations for use with GMAP-Fusion, DISCASM, STAR, and other processes we'll need for fusion discovery and analysis as part of Trinity CTAT.
 
-    %  $GMAP_FUSION_HOME/FusionFilter/prep_genome_lib.pl \
+    %  $GMAP_FUSION_HOME/ctat-genome-lib-builder/prep_genome_lib.pl \
           --genome_fa minichr2.fa \
           --gtf minichr2.gtf \
           --gmap_build
