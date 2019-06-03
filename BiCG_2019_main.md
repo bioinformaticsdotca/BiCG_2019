@@ -83,8 +83,8 @@ It is in your best interest to complete these before the workshop.
 [Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
 
 * We have set up instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download CBWCG.pem from Slack; Otherwise if you plan on using Windows (with Putty), please download CBWCG.ppk from Slack.  
-[Mac Key](https://drive.google.com/a/bioinformatics.ca/file/d/1aMDhLhKdfYfp3OzQkKt_S_Yt-46g7U53/view?usp=sharing)  
-[Windows Key](https://drive.google.com/a/bioinformatics.ca/file/d/1c5Io_bhklZYQeeSDtoLRl7TMQG3j9g9n/view?usp=sharing)
+[Mac Key]()  
+[Windows Key]()
 
 ## Unix and R review
 
