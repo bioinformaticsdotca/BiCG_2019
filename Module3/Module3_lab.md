@@ -21,7 +21,7 @@ This lab was created by Sorana Morrissy, then modified by Florence Cavalli and H
 
 ### Description of the lab
 
-Welcome to the lab for **Genome Visualization**! This lab will introduce you to the [Integrative Genomics Viewer](http://www.broadinstitute.org/igv), a powerful desktop application for viewing many kinds of genomic data, including data for DNA sequencing, RNA sequencing, microarrays, epidgenetics, and copy number alteration. It is one of the most popular visualization tools for **high throughput sequencing (HTS)** data.
+Welcome to the lab for **Genome Visualization**! This lab will introduce you to the [Integrative Genomics Viewer](http://www.broadinstitute.org/igv), a powerful desktop application for viewing many kinds of genomic data, including data for DNA sequencing, RNA sequencing, microarrays, epigenetics, and copy number alteration. It is one of the most popular visualization tools for **high throughput sequencing (HTS)** data.
 
 After this lab, you will be able to:
 
@@ -57,8 +57,7 @@ This tutorial was intended for **IGV v2.4 or v2.3**, which is available on the [
 # Visualization Part 1: Getting familiar with IGV
 
 We will be visualizing read alignments using the
-[Integrative Genomics Viewer](http://www.broadinstitute.org/igv), 
-a popular visualization tool for HTS data.
+[Integrative Genomics Viewer](http://www.broadinstitute.org/igv).
 
 First, lets familiarize ourselves with it.
 
@@ -115,7 +114,7 @@ Sometimes it's really useful to save where you are, or to load regions of intere
 
 ## Loading Read Alignments
 
-We will be using the breast cancer cell line HCC1143 to visualize alignments. For speed, only a small portion of chr21 will be loaded (19M:20M).
+We will visualize alignments from the breast cancer cell line HCC1143. For speed, only a small portion of chr21 will be loaded (19M:20M).
 
 *HCC1143 Alignments to hg19:* 
 
@@ -149,7 +148,7 @@ Mouse over any read and notice that a lot of information is available. To toggle
 
 ![Read information.](https://bioinformatics-ca.github.io/images/Igv_show_details_on_click.png)
 
-Once you select a read, you will learn what many of these metrics mean, and how to use them to assess the quality of your datasets.
+Once you select a read, a pop-up window shows quality metrics and other information about that read.
 
 ![Read information.](https://bioinformatics-ca.github.io/images/Igv_click_read.png)
 
@@ -172,8 +171,8 @@ Navigate to position "chr21:19,479,237-19,479,814"
  * Good mapping quality of reads, no strand bias, allele frequency consistent with heterozygous mutation
 
  **Questions:**
- * What does Shade base by quality do? How might this be helpful?
- * How does Color by "read strand" help?
+ * What does "Shade base by quality" do? How might this be helpful?
+ * How does "Color by read strand" help?
 
 
 ## Homopolymer Repeat with Indel 
@@ -224,7 +223,7 @@ Navigate to region "chr21:19,666,833-19,667,007"
 ![Example4](https://bioinformatics-ca.github.io/images/Igv_example4.png)
 
  **Note:**
- * Linkage between alleles is obvious in this case because both SNV positions are spanned by single reads, but reads only have either one or the other
+ * Both SNV positions are spanned by single reads, but reads only have either one or the other, indicating that they are on different haplotypes
 
 
 ## Low Mapping Quality 
