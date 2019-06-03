@@ -282,6 +282,6 @@ https://www.bioconductor.org/packages/release/bioc/html/ballgown.html
 
 **A9)** The CummerBund package provides a wide variety of plots that can be used to visualize a gene’s expression profile or genes that are differentially expressed. Some of these plots include heatmaps, boxplots, and volcano plots. Alternatively, you can use custom plots using ggplot2 command or base R plotting commands such as those provided in the supplementary tutorials. Start with something very simple such as a scatter plot of tumor vs. normal FPKM values.
 
-**see attached [Module8_Lab_plots.R](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_plots.R) for plotting options
-
+**see [Module8_Lab_plots.R](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_plots.R) for plotting options**
+and expected plots [Module8_Lab_Supplementary_R_output.pdf](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_Supplementary_R_output.pdf)
 
