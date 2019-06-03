@@ -100,7 +100,7 @@ You can navigate to a gene of interest by typing it in the same box the genomic 
 
 ![Gene model.](https://bioinformatics-ca.github.io/images/Igv-genes.png)
 
-Genes are represented as lines and boxes. Lines represent intronic regions, and boxes represent exotic regions. The arrows indicate the strand on which the gene lies.
+Genes are represented as lines and boxes. Lines represent intronic regions, and boxes represent exonic regions. The arrows indicate the strand on which the gene lies.
 
 When loaded, tracks are stacked on top of each other. You can identify which track is which by consulting the label to the left of each track.
 
@@ -123,7 +123,7 @@ We will visualize alignments from the breast cancer cell line HCC1143. For speed
 
 *Note: these are the same files listed at the top of tutorial.*
 
-Copy the files to your local drive, and in IGV choose *File > Load from File*, select the bam file, and click **OK**. Note that the bam and index files must be in the same directory for IGV to load these properly, but only the bam file (not the bam.bai file) needs to be loaded into IGV. (If your index is located in a different directory from your bam, you will need to specify the index location as well.)
+Copy the files to your local drive, and in IGV choose *File > Load from File*, select the bam file, and click **OK**. Note that the bam and index files must be in the same directory for IGV to load these properly, but only the bam file (not the bam.bai file) needs to be loaded into IGV.
 
 ![Load BAM track from File](https://bioinformatics-ca.github.io/images/Igv_load_bam.png)
 
