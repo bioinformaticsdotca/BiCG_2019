@@ -207,7 +207,6 @@ Note that the range contains areas where coverage drops to zero in a few places.
  * Use Collapsed view
  * Color alignments by "insert size"
  * Load GC track (if not loaded already; *File -> Load from Server -> Annotations -> Sequence and Regulations -> GC Percentage*)
-   * See concordance of coverage with GC content
 
 ![Example3](https://bioinformatics-ca.github.io/images/Igv_example3.png)
 
@@ -250,7 +249,7 @@ Navigate to region "chr21:19,800,320-19,818,162"
 
 Navigate to region "chr21:19,324,469-19,331,468"
  * Sort reads by insert size
-    * Some read pairs are now colored red and blue. This is different from "Color by read strand". **Red** read pairs correspond to insert sizes that are **larger** than expected, and **blue** read pairs correspond to insert sizes that are **smaller** than expected.
+    * Some read pairs are colored red and blue. This is different from "Color by read strand". **Red** read pairs correspond to insert sizes that are **larger** than expected, and **blue** read pairs correspond to insert sizes that are **smaller** than expected.
     * **Larger (red) insert sizes** can be indicative of a **deletion**
     * **Smaller (blue) insert sizes** can be indicative of an **insertion**
     * This is well explained [here](https://software.broadinstitute.org/software/igv/interpreting_insert_size) 
@@ -274,6 +273,8 @@ Navigate to region "chr21:19,102,154-19,103,108"
 * Turn on "View as Pairs" and "Expanded" view
 * Group alignments by "Pair orientation"
 * Color alignments by "Insert size and pair orientation"
+   * "Insert size" also colors reads when a mate is mapped to a different chromosome. Each chromosome has it's own color, as described [here](https://software.broadinstitute.org/software/igv/interpreting_insert_size)
+   * "Pair orientation" colors read pairs when they are not in the expected left-right (LR) orientation. This is well explained [here](https://software.broadinstitute.org/software/igv/interpreting_pair_orientations)
 
 ![Example7](https://bioinformatics-ca.github.io/images/Igv_example7.png)
 
@@ -289,8 +290,6 @@ Navigate to region "chr21:19,089,694-19,095,362"
  * Expanded view
  * Group by "Pair orientation"
  * Color alignments by "Insert size and pair orientation"
-   * "Insert size" also colors reads when a mate is mapped to a different chromosome. Each chromosome has it's own color, as described [here](https://software.broadinstitute.org/software/igv/interpreting_insert_size)
-   * "Pair orientation" colors read pairs when they are not in the expected left-right (LR) orientation. This is well explained [here](https://software.broadinstitute.org/software/igv/interpreting_pair_orientations)
 
 ![Example8](https://bioinformatics-ca.github.io/images/Igv_example8.png)
 
