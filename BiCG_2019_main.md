@@ -166,15 +166,7 @@ Coming soon
 
 *<font color="#827e9c">Florence Cavalli</font>* 
 
-[Ballgown code](https://drive.google.com/a/bioinformatics.ca/file/d/0B2tkpG9cB9bdbFlCeHEzcDBDSmZ4aTZ4dHpiQUVET0c1TU1j/view?usp=sharing)  
-
-[Supplementary code](https://drive.google.com/a/bioinformatics.ca/file/d/0B2tkpG9cB9bdZndNNy1LYVVWNEJaT0x3Ykp3WTQteW9jTzhv/view?usp=sharing)
-
-[Supplementary R output](https://drive.google.com/a/bioinformatics.ca/file/d/0B2tkpG9cB9bdNWZ2UEtUSDlTaVM2VGpWMTFQMkRoamFLYXdF/view?usp=sharing)
-
-[Questions with Answers PDF](https://drive.google.com/a/bioinformatics.ca/file/d/1qvrULzdtZ8SIU28kLMl4E3M_XFo94QyM/view?usp=sharing)  
-
-[Questions with Answers Word](https://drive.google.com/a/bioinformatics.ca/file/d/1Zstc8oAqLgppQF-wdvJzHZU6xbYBNAjc/view?usp=sharing)  
+[Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module8_Lab)  
 
 ## Module 9: Gene Fusion and Rearrangements
 
