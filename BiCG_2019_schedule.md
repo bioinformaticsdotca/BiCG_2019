@@ -16,7 +16,7 @@ home: https://bioinformaticsdotca.github.io/BiCG_2019
 | 9:00 | Welcome and Introductions (Brazas) | 9:00 | Module 4: Genome Alignment (Simpson) | 9:00 | Module 6 Lab (Morrissy) |  
 | 9:30 | Module 1: Introduction to Cancer Genomics (Pugh) | | | | |  
 | 11:00 | Coffee Break |  10:00 | Coffee Break | 10:30 | Coffee Break |  
-| 11:30 | Module 2: Ethics of Data Usage and Security (Phillips) |10:30 | Module 4 Lab: Genome Assembly (Simpson) | 11:00 | Module 7: Somatic Mutations and Annotations (Morrissy) |  
+| 11:30 | Module 2: Ethics of Data Usage and Security (Phillips) |10:30 | Module 4 Lab: Genome Alignment (Simpson) | 11:00 | Module 7: Somatic Mutations and Annotations (Morrissy) |  
 | 12:30 | Lunch | 12:00 | Lunch | 12:30 | Lunch |  
 | 1:30 | Module 3: Databases and Visualization Tools (Ouellette) |1:00 | Module 5: Genome Assembly (Simpson) | 1:30 | Module 7 Lab (Morrissy) |    
 | 2:30 | Coffee Break | 3:00 | Coffee Break | 3:00 | Coffee Break |   
