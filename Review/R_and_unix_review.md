@@ -145,6 +145,18 @@ grep TTT test.fasta
 head test.fasta | grep TTT
 ```
 
+* Flags are additional options for commands. They are usually indicated with a dash and a single letter:
+```
+head -n 5 test.fasta
+```
+`-n` is the flag to specify the number of lines to be shown for the `head` command, and `5` is the option we chose.
+
+* man: open a help page for a command:
+```
+man head
+```
+Scroll through the usage and options available for the `head` command. Press `q` to exit when done.
+
 * history: prints out the \~1000 most recently commands that you entered:
 ```
 history
