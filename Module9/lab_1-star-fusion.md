@@ -29,13 +29,7 @@ All software and data we'll be using for this tutorial are installed on the serv
 
     % cp -r ~/CourseData/CG_data/Module9/STAR-Fusion/STAR-Fusion-Tutorial .
 
-Then configure an environmental variable that indicates the installation directory.
-
-First, enter your new STAR-Fusion subdirectory/
-
-    %  cd STAR-Fusion-Tutorial
-
-and set the following environmental variable like so:
+Set the following environmental variable like so:
 
     %  export STAR_FUSION_HOME=/usr/local/STAR-Fusion-v1.5.0/
     
