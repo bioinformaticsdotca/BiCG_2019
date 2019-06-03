@@ -37,7 +37,7 @@ First, enter your new STAR-Fusion subdirectory/
 
 and set the following environmental variable like so:
 
-    %  export STAR_FUSION_HOME=`which STAR-Fusion`
+    %  export STAR_FUSION_HOME=/usr/local/STAR-Fusion-v1.5.0/
     
 now verify that this variable was set:
 
