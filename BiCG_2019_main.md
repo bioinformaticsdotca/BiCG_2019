@@ -40,7 +40,7 @@ It is in your best interest to complete these before the workshop.
 
 # Class Photo
 
-Coming soon  
+<img src="https://github.com/bioinformaticsdotca/BiCG_2019/blob/master/ClassPhoto_BiCG2019.jpg?raw=true" alt="Class Photo" width="750" /> 
 
 *** 
 
