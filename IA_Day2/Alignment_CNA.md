@@ -114,13 +114,13 @@ INSTALL_DIR=~/CourseData/CG_data/Module6/install
 HMMCOPY_DIR=~/CourseData/CG_data/Module6/install/hmmcopy/HMMcopy
 ```
 
-Generating a reference genome mappability file typically takes about an hour for our analysis, evne though it is focused on just chromosome 20, so we will use a pre-generated file available [here](https://github.com/bioinformaticsdotca/BiCG_2018/blob/master/IntegrativeAssignment2/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig). Download it to your AWS instance with the following command:
+Mappability refers to how well reads map to a genome, and is roughly correlated with uniqueness of sequences in the genome (unique regions will have high mappability; repetitive regions will have lower mappability). Generating a reference genome mappability file typically takes about an hour for our analysis, even though it is focused on just chromosome 20, so we will use a pre-generated file available [here](https://github.com/bioinformaticsdotca/BiCG_2018/blob/master/IntegrativeAssignment2/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig). Download it to your AWS instance with the following command:
 ```
 cd ref; curl -o Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig https://github.com/bioinformaticsdotca/BiCG_2018/blob/master/IntegrativeAssignment2/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig
 ```
 If you would like to learn how to run it yourself, see [this file](https://github.com/bioinformaticsdotca/BiCG_2019/blob/master/IA_Day2/RefGenomeMappability.md).
 
-In order to correct the binned read counts for GC bias, we need to generate files based on the GC coverage of the reference genome:
+In order to correct the binned read counts for GC bias (which affects read coverage), we need to generate files based on the GC coverage of the reference genome:
 ```
 $HMMCOPY_DIR/bin/gcCounter \
     $IA_HOME/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa \
