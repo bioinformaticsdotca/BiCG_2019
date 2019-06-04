@@ -76,7 +76,7 @@ Currently we don't have write permissions in our `bams` file, only read permissi
 -r--r--r-- 1 ubuntu ubuntu 2767858102 May 27 19:21 bams/tum.sam
 ```
 
-The `r`s mean read: we currently have permission to read the files in `bams`. We want to be able to edits these files, or write (`w`)them as well. We can do this with the following command:
+The `r` means read: we currently have permission to read the files in `bams`. We want to be able to edits these files, or write (`w`) them as well. We can do this with the following command:
 ```
 chmod +w $IA_HOME/bams/*
 ```
