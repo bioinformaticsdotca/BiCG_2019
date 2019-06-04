@@ -13,7 +13,9 @@ modified: May 28th, 2019
 
 # Integrated Assignment - Day 2
 
-The following assignment will involve aligning a subset of reads from the the tumour and normal HCC1395 cell line samples to the human reference genome, and then performing copy number analysis on the samples. However, in this assignment, we'll be building all the indices of our reference genome as well as performing the preprocessing for Titan. We will be following a similar procedure to the labs from Modules today, including the `Data Preprocessing` sections, to properly process the samples. The analysis will be focused on chromosome 20 due to time constraints.
+In this assignment, we will do the preprocessing steps for **copy number alteration (CNA)** analysis. In tomorrow's lab for [Module 6](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab) we will do the full analysis using genome-wide exome data. For today we are only focusing on chromosome 20 for the sake of time, so we can show how the preprocessing steps are used. We will get better results from our analysis tomorrow.
+
+The following assignment will involve aligning a subset of reads from the the tumour and normal HCC1395 cell line samples to the human reference genome, and then performing copy number analysis on the samples. However, in this assignment, we'll be building all the indices of our reference genome as well as performing the preprocessing for Titan. We will be following a similar procedure to the labs for tomorrow, including the `Data Preprocessing` sections, to properly process the samples. The analysis will be focused on chromosome 20 due to time constraints.
 
 Task list:  
 1) Build a bwa and bowtie2 index, as well as index our fasta  
@@ -22,10 +24,13 @@ Task list:
 4) Generate a reference genome mappability file \*  
 5) Generate a reference genome GC content file  
 6) Calculate tumor and normal depth  
-7) Identify heterozygous germline positions in the normal  
-8) Call CNAs with Titan  
+7) Identify heterozygous germline positions in the normal
 
-\* Because this step takes about an hour, we're going to copy the results from the command for the sake of time.
+\* Because this step takes about an hour, we're going to use pre-generated results for the sake of time.
+
+We will wait to run Titan, the final step in our CNA analysis, until tomorrow so we can spend more time discussing how it works.  
+
+---
 
 First let's set up our working folder and create an environment variable to help navigate our paths. We're also going to make a folder to hold our logs and errors for our processes in a separate folder called "jobs"
 
@@ -37,6 +42,8 @@ cd $IA_HOME
 mkdir jobs
 JOB_OUT=$IA_HOME/jobs
 ```
+
+`$IA_HOME` is an environment variable. Think of it as a shortcut or nickname for our working directory, so we don't have to type out `/home/ubuntu/workspace/IA_tuesday` every time.
 
 Now that we've setup our working directory, we can link our reference data and our tumour/normal data
 
@@ -53,6 +60,39 @@ Let's start with building our reference indices for bwa and bowtie2. Make sure t
 bwa index $IA_HOME/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa > $JOB_OUT/bwa_index.log 2>$JOB_OUT/bwa_index.err
 bowtie2-build -t 8 $IA_HOME/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa $IA_HOME/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa > $JOB_OUT/bowtie2_index.log 2>$JOB_OUT/bowtie2_index.err
 samtools faidx $IA_HOME/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa
+```
+
+Currently we don't have write permissions in our `bams` file, only read permissions. This can be checked with `ls -l $IA_HOME/bams/*`. You should see something like this:
+```
+-r--r--r-- 1 ubuntu ubuntu  343049561 May 27 19:20 bams/HCC1395_norm.chr6.bam
+-r--r--r-- 1 ubuntu ubuntu  552640940 May 27 19:22 bams/HCC1395_tum.chr6.bam
+-r--r--r-- 1 ubuntu ubuntu  346959643 May 27 19:20 bams/norm.bam
+-r--r--r-- 1 ubuntu ubuntu 1714996931 May 27 19:22 bams/norm.sam
+-r--r--r-- 1 ubuntu ubuntu  346579564 May 27 19:21 bams/sorted_norm.bam
+-r--r--r-- 1 ubuntu ubuntu    1882904 May 27 19:21 bams/sorted_norm.bam.bai
+-r--r--r-- 1 ubuntu ubuntu  557279533 May 27 19:22 bams/sorted_tum.bam
+-r--r--r-- 1 ubuntu ubuntu    1975568 May 27 19:22 bams/sorted_tum.bam.bai
+-r--r--r-- 1 ubuntu ubuntu  558005885 May 27 19:20 bams/tum.bam
+-r--r--r-- 1 ubuntu ubuntu 2767858102 May 27 19:21 bams/tum.sam
+```
+
+The `r`s mean read: we currently have permission to read the files in `bams`. We want to be able to edits these files, or write them as well. We can do this with the following command:
+```
+chmod +w $IA_HOME/bams/*
+```
+
+Our directory should now look like this:
+```
+-rw-rw-r-- 1 ubuntu ubuntu  343049561 May 27 19:20 bams/HCC1395_norm.chr6.bam
+-rw-rw-r-- 1 ubuntu ubuntu  552640940 May 27 19:22 bams/HCC1395_tum.chr6.bam
+-rw-rw-r-- 1 ubuntu ubuntu  346959643 May 27 19:20 bams/norm.bam
+-rw-rw-r-- 1 ubuntu ubuntu 1714996931 May 27 19:22 bams/norm.sam
+-rw-rw-r-- 1 ubuntu ubuntu  346579564 May 27 19:21 bams/sorted_norm.bam
+-rw-rw-r-- 1 ubuntu ubuntu    1882904 May 27 19:21 bams/sorted_norm.bam.bai
+-rw-rw-r-- 1 ubuntu ubuntu  557279533 May 27 19:22 bams/sorted_tum.bam
+-rw-rw-r-- 1 ubuntu ubuntu    1975568 May 27 19:22 bams/sorted_tum.bam.bai
+-rw-rw-r-- 1 ubuntu ubuntu  558005885 May 27 19:20 bams/tum.bam
+-rw-rw-r-- 1 ubuntu ubuntu 2767858102 May 27 19:21 bams/tum.sam
 ```
 
 Once this is complete, we're going to use bwa to align our fastq files to the reference genome. This will take just under 3 minutes.
@@ -77,7 +117,7 @@ INSTALL_DIR=~/CourseData/CG_data/Module6/install
 HMMCOPY_DIR=~/CourseData/CG_data/Module6/install/hmmcopy/HMMcopy
 ```
 
-Now we'll generate a reference genome mappability file. The following step typically takes about an hour even with our analysis being focused on just chromosome 20, so alternatively the processed file is available [here](https://github.com/bioinformaticsdotca/BiCG_2018/blob/master/IntegrativeAssignment2/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig).
+Now we'll generate a reference genome mappability file. The following step typically takes about an hour even with our analysis being focused on just chromosome 20, so alternatively the processed file is available [here](https://github.com/bioinformaticsdotca/BiCG_2018/blob/master/IntegrativeAssignment2/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig). Download it to your AWS instance with the following command:
 
 ```
 cd ref; curl -o Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig https://github.com/bioinformaticsdotca/BiCG_2018/blob/master/IntegrativeAssignment2/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig
@@ -85,8 +125,7 @@ cd ref; curl -o Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.ma
 
 If you would like to learn how to run it yourself, see [this file](https://github.com/bioinformaticsdotca/BiCG_2019/blob/master/IA_Day2/RefGenomeMappability.md).
 
-
-We will now also generate our reference GC content file
+In order to correct the binned read counts for GC bias, we need to generate files based on the GC coverage of the reference genome:
 
 ```
 $HMMCOPY_DIR/bin/gcCounter \
@@ -94,7 +133,7 @@ $HMMCOPY_DIR/bin/gcCounter \
     > $IA_HOME/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.gc.wig
 ```
 
-Now that our coverage and mappability files have been created, we can calculate our tumor and normal depth for chromosome 20
+Now that our coverage and mappability files have been created, we can calculate our tumor and normal read depth for chromosome 20. Our analysis uses binned read counts to infer copy number. We used the HMMcopy C package to extract the number of reads in each bin for 1000 bp bins across the genome, from both the tumour and normal .bam files. The output is in the form of .wig files for the tumour and normal. These files specify the number of reads that fall into each genomic bin.
 
 ```
 cd $IA_HOME;
@@ -107,7 +146,7 @@ $HMMCOPY_DIR/bin/readCounter \
     $IA_HOME/bams/HCC1395_norm.chr20.sorted.bam > $IA_HOME/hmmcopy/HCC1395_exome_normal.wig
 ```
 
-Our last step before running Titan is to identify heterozygous germline positions in the normal and extract allele counts in the tumour. Since this requires running mutationseq which calls python, we're going to add python to our PATH so that our system can use the program. We'll also use environment variables for ease of use
+Next we will identify heterozygous germline positions in the normal and extract allele counts in the tumour. We will use these positions to extract b-allele frequencies (BAF) from the tumour genome. Since this requires running mutationseq which calls python, we're going to add python to our PATH so that our system can use the program. We'll also use environment variables for ease of use
 
 ```
 PYTHON_DIR=$INSTALL_DIR/miniconda/miniconda2
@@ -130,7 +169,8 @@ $PYTHON_DIR/bin/python $MUSEQ_DIR/preprocess.py \
 	2> $JOB_OUT/run_mutationseq.err
 ```
 
-Once mutationseq is completed, we'll use our custom script to transform the vcf file to a counts file
+The file HCC1395_mutationseq.vcf contains the raw output of MutationSeq as a [variant call format](http://www.internationalgenome.org/wiki/Analysis/vcf4.0/) file.
+Once mutationseq is completed, we'll use our custom script to transform the vcf file to a counts file. 
 
 ```
 $PYTHON_DIR/bin/python $SCRIPTS_DIR/transform_vcf_to_counts.py \
@@ -138,30 +178,4 @@ $PYTHON_DIR/bin/python $SCRIPTS_DIR/transform_vcf_to_counts.py \
 	--outfile $IA_HOME/mutationseq/HCC1395_mutationseq_postprocess.txt
 ```
 
-We're now going to link our install directory and scripts directory:
-```
-ln -s /home/ubuntu/CourseData/CG_data/Module6/install $IA_HOME
-ln -s /home/ubuntu/CourseData/CG_data/Module6/scripts $IA_HOME
-```
-
-Finally we can run Titan using all the files we've created:
-
-```
-mkdir -p $IA_HOME/titan
-cd $IA_HOME/titan
-Rscript $IA_HOME/scripts/run_titan.R \
-	--sample_id HCC1395 \
-	--tumour_wig $IA_HOME/hmmcopy/HCC1395_exome_tumour.wig \
-	--normal_wig $IA_HOME/hmmcopy/HCC1395_exome_normal.wig \
-	--tumour_baf $IA_HOME/mutationseq/HCC1395_mutationseq_postprocess.txt \
-	--gc_wig $IA_HOME/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.gc.wig \
-	--map_wig $IA_HOME/ref/Homo_sapiens.GRCh37.75.dna.primary_assembly.chr20_adjusted.fa.map.ws_1000.wig \
-	--result_dir $IA_HOME/titan \
-	--exome_bed ~/CourseData/CG_data/Module6/ref_data/NimbleGenExome_v3.bed \
-	--num_clust 1 \
-	--ploidy 2.0 \
-	--normal_con 0.0 \
-	> $JOB_OUT/run_titan.log \
-	2> $JOB_OUT/run_titan.err
-```
-In this case, the error that's created is due to the fact that Titan cannot create a valid error model at the "correctReadDepth" stage of the script due to lack of input data. This is because we're using exome data and only focused on chromosome 20, so the number of input data is too low. It's always a good idea to [search any errors](https://github.com/benjjneb/dada2/issues/171) you might come across during your own analysis.
+This is the type of file that is used when running Titan to perform CNA analysis, which we will do tomorrow.
