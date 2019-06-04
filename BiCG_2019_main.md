@@ -122,7 +122,9 @@ It is in your best interest to complete these before the workshop.
 *<font color="#827e9c">Sorana Morrissy</font>* 
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1-SYXqc5LUsLeOS6UVeoSYUE4Moht2OPF/view?usp=sharing)     
-[Lecture in PPT](https://drive.google.com/a/bioinformatics.ca/file/d/1ncjIqkg-uF0LYm17GMeB6r8rWUDfW_PJ/view?usp=sharing)
+[Lecture in PPT](https://drive.google.com/a/bioinformatics.ca/file/d/1ncjIqkg-uF0LYm17GMeB6r8rWUDfW_PJ/view?usp=sharing)     
+    
+[Updated Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1CDfpw5NPjYAzk5A9a3Ru7vb0X99EpVf2/view?usp=sharing)     
 
 ## Integrative Assignment  
 
