@@ -14,63 +14,13 @@ modified: May 23, 2019
 # Integrated Assignment - Day 3
 
 
-## Installing programs without root access
+## Installing programs with root access
 
 Let's install bowtie!
 
-#### With root access:
-
-```
-which bowtie
-```
-This gives no output. Bowtie cannot be found on our path. If it is installed, it is lost somewhere inside the computer.
-
-
-Can we find bowtie on the linux repositories?
-
-First, update the list of packages available
-```
-sudo apt-get update
-```
-
-Next, search for bowtie within the repositories.
-```
-apt-cache search bowtie
-```
-If you cannot find the name of your package here, use a search engine to find the name of the package you need.
-
-
-Great. We found it. Now install.
-
-```
-sudo apt-get install bowtie
-```
-Now test that it can be found, and that it functions (ideally with a small test dataset)
-
-```
-which bowtie
-
-bowtie
-```
-
-Done!
-
-
-
-
-
 #### Without root access
 
-Try to install as we did before:
-
-```
-sudo apt-get install bowtie
-```
-Sadness. No software for you.
-
-This is because the default installation directory is "/usr/bin" or something similar. Without the correct permissions, you cannot write to these directories, therefore this installation method will fail.
-
-Fortunately, there are many, MANY, MAAAAANY bioinformatics packages available through conda - a python-based package manager. Let's install that into OUR HOME DIRECTORY which we have permissions to modify.
+there are many, MANY, MAAAAANY bioinformatics packages available through conda - a python-based package manager. Let's install that into OUR HOME DIRECTORY which we have permissions to modify.
 
 First, make a directory where we will install our software.
 ```
@@ -84,7 +34,7 @@ cd $SOFTWARE_HOME
 * Right-click / copy link address
 * Should be: https://repo.continuum.io/archive/Anaconda2-5.1.0-Linux-x86_64.sh
 
-Download from commandline
+or download from commandline
 ```
 wget https://repo.continuum.io/archive/Anaconda2-5.1.0-Linux-x86_64.sh
 ```
@@ -98,7 +48,6 @@ bash Anaconda2-5.1.0-Linux-x86_64.sh
 * Install to: /home/ubuntu/software/anaconda (or wherever you would like to keep this forever)
 * "no" do not modify .bashrc (although you could if you want this to be maintained permanently)
 * no do not get microsoft thing
-
 
 Add conda to path
 ```
@@ -128,29 +77,12 @@ Or many packages at once:
 conda install \
 samtools \
 picard \
-igvtools \
-bowtie \
-bowtie2 \
-gmap \
-bwa \
-chimerascan \
-defuse \
-perl-threaded \
-perl-set-intervaltree \
-star \
-trinity
 ```
-
-
-
 
 ## Continuing with SNV calls
 
 
-Make a directory to work in
-
-
-Move there
+Make a directory to work in and move there
 
 ```
 IA_HOME=/home/ubuntu/workspace/IA_wednesday
@@ -167,10 +99,11 @@ What does ANNOVAR do?
 The following command is what we ran yesterday.
 
 (Note that we would need to redefine our environmental variable $ANNOVAR_DIR for this command to work.) ie:ANNOVAR_DIR=/home/ubuntu/CourseData/CG_data/Module7/install/annovar
+
 Also your mutect_passed.vcf is probably in "/home/ubuntu/workspace/Module7_snv/results/mutect/mutect_passed.vcf"
 ```
 $ANNOVAR_DIR/table_annovar.pl \
-results/mutect/mutect_passed.vcf \
+/home/ubuntu/workspace/Module7_snv/results/mutect/mutect_passed.vcf \
 $ANNOVAR_DIR/humandb/ \
 -buildver hg19 \
 -out mutect \
@@ -207,7 +140,6 @@ grep "INFO=" $out_file | grep -E "refGene|cytoBand|genomicSuperDups|1000g2015aug
 ```
 
 Note that "annotation provided by ANNOVAR" is not a terribly helpful descriptor
-
 
 The ANNOVAR user-guide provides more info
 ```
@@ -331,14 +263,9 @@ samtools view -bh \
 -o /home/ubuntu/CourseData/CG_data/sample_data/HCC1395_subset/HCC1395_exome_tumour.12.48MB-50MB.bam
 ```
 
-
-
-
-# Some cool resources
-
-
 ## Database resources
 ### UCSC Genome Browser
+
 ```
 https://genome.ucsc.edu/
 ```
