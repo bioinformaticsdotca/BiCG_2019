@@ -44,7 +44,7 @@ Things to know before you start:
 
 ### Compatibility
 
-This tutorial was intended for **IGV v2.4 or v2.3**, which is available on the [Download](http://www.broadinstitute.org/software/igv/download) page. It is *strongly* recommended that you use one of these versions, as other versions may not be compatible. If you have installed a former version, please uninstall it and install the latest version.
+This tutorial was intended for **IGV v2.3 or higher**, which is available on the [Download](http://www.broadinstitute.org/software/igv/download) page. It is *strongly* recommended that you use one of these versions, as older versions may not be compatible. If you have installed a former version, please uninstall it and install the latest version.
 
 
 ### Data Set for IGV
@@ -272,8 +272,7 @@ Navigate to region "chr21:19,102,154-19,103,108"
 * Turn on "View as Pairs" and "Expanded" view
 * Group alignments by "Pair orientation"
 * Color alignments by "Insert size and pair orientation"
-   * "Insert size" also colors reads when a mate is mapped to a different chromosome. Each chromosome has it's own color, as described [here](https://software.broadinstitute.org/software/igv/interpreting_insert_size)
-   * "Pair orientation" colors read pairs when they are not in the expected left-right (LR) orientation. This is well explained [here](https://software.broadinstitute.org/software/igv/interpreting_pair_orientations)
+   * "Insert size" also colors reads when a mate is mapped to a different chromosome. Each chromosome has its own color, as described [here](https://software.broadinstitute.org/software/igv/interpreting_insert_size)
 
 ![Example7](https://bioinformatics-ca.github.io/images/Igv_example7.png)
 
@@ -289,6 +288,7 @@ Navigate to region "chr21:19,089,694-19,095,362"
  * Expanded view
  * Group by "Pair orientation"
  * Color alignments by "Insert size and pair orientation"
+    * "Pair orientation" colors read pairs when they are not in the expected left-right (LR) orientation. This is well explained [here](https://software.broadinstitute.org/software/igv/interpreting_pair_orientations)
 
 ![Example8](https://bioinformatics-ca.github.io/images/Igv_example8.png)
 
@@ -386,3 +386,8 @@ Now navigate to position "chr21:19,790,758-19,790,965"
 ---
 
 **You're done!** We hope that you enjoyed the lab and that you continue to enjoy IGV.
+
+## Resources
+
+* [Suggested answers to the questions from this lab](https://github.com/bioinformaticsdotca/BiCG_2019/raw/master/Module3/Module3_lab_answers.md)
+* [IGV user manual](http://software.broadinstitute.org/software/igv/UserGuide)
