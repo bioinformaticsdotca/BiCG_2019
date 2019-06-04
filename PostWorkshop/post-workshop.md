@@ -26,7 +26,7 @@ The data sets in the workshop can be downloaded from below. If your download spe
 - [Module7 (63.2G)](http://www.hpc4health.ca/cbw/2019/CG/Module7.tar)
 - [Module8 (232.2M)](http://www.hpc4health.ca/cbw/2019/CG/Module8.tar)
 - [Module9 (118.6G)](http://www.hpc4health.ca/cbw/2019/CG/Module9.tar)
-- [Integrative Assignment](http://www.hpc4health.ca/cbw/2019/CG/IA_tuesday.tar)
+- [Integrative Assignment (88.5G)](http://www.hpc4health.ca/cbw/2019/CG/IA_tuesday.tar)
 
 ## AWS Image
 
