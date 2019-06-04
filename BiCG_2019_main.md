@@ -225,6 +225,9 @@ It is in your best interest to complete these before the workshop.
 
 [Data for lab part 1](https://drive.google.com/a/bioinformatics.ca/file/d/1XtKvfTTcIqBJAlkr652ktMnzgGFjYFOS/view?usp=sharing)   
 [Data for lab part 2](https://drive.google.com/a/bioinformatics.ca/file/d/1_BXD0O0NMiypKiO8Yq0gZD2_s_Lf-MFU/view?usp=sharing)   
+## Post Workshop 
+
+Post workshop content for data sets, docker containers, AWS image, tools and install instructions can be found [here](https://bioinformaticsdotca.github.io/BiCG_2019_Post-Workshop)  
 
 ## Recap
 
