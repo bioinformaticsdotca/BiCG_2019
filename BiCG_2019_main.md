@@ -148,7 +148,8 @@ It is in your best interest to complete these before the workshop.
 *<font color="#827e9c">Sorana Morrissy</font>* 
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1bqVw3HtBiOytAX_GuhZV_fZ5l6BxoQWO/view?usp=sharing)     
-[Lecture in PPT](https://drive.google.com/a/bioinformatics.ca/file/d/1Cr8cWGYFyRMwR7pYcAPbNjvffDhuqH3_/view?usp=sharing)
+[Lecture in PPT](https://drive.google.com/a/bioinformatics.ca/file/d/1Cr8cWGYFyRMwR7pYcAPbNjvffDhuqH3_/view?usp=sharing)   
+[Updated Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1dHXAr4ktbFiJ74bD4TTMta4JzBwgMw_c/view?usp=sharing)    
   
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module7_Lab)  
 
