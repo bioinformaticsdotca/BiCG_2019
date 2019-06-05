@@ -245,7 +245,7 @@ This is another small region that should contain verified SNVs
 
 ```
 samtools view -bh \
-/home/ubuntu/CourseData/Module7/HCC1395/HCC1395_exome_normal.ordered.bam \
+/home/ubuntu/CourseData/CG_data/Module7/HCC1395/HCC1395_exome_normal.ordered.bam \
 12:48000000-50000000 \
 -o HCC1395_exome_normal.12.48MB-50MB.bam
 
