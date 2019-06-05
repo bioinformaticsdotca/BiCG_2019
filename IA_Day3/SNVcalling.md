@@ -100,7 +100,7 @@ The following command is what we ran earlier today.
 
 Note that you would need to redefine our environmental variable $ANNOVAR_DIR if you closed your AWS session: 
 ```
-$ANNOVAR_DIR=/home/ubuntu/CourseData/CG_data/Module7/install/annovar
+ANNOVAR_DIR=/home/ubuntu/CourseData/CG_data/Module7/install/annovar
 ```
 
 Also your mutect_passed.vcf is probably in "/home/ubuntu/workspace/Module7_snv/results/mutect/mutect_passed.vcf"
