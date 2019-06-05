@@ -236,5 +236,5 @@ Post workshop content for data sets, docker containers, AWS image, tools and ins
 
 ***
 
-Thank you for attending the Bioinformatics for Cancer Genomics workshop! Help us make this workshop better by filling out [our survey]().
+Thank you for attending the Bioinformatics for Cancer Genomics workshop! Help us make this workshop better by filling out [our survey](https://forms.gle/ZHVpVCLWnTXjnWYWA).
 
