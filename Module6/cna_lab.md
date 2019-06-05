@@ -56,10 +56,10 @@ Now let's create links in this CNA working directory to: (1) the data we will us
 
 ```bash
 mkdir data install scripts ref_data
-ln -s /home/ubuntu/CourseData/CG_data/Module6/data/* $CNA_WORKSPACE/data	# link to data
-ln -s /home/ubuntu/CourseData/CG_data/Module6/install/* $CNA_WORKSPACE/install	# link to install directory
-ln -s /home/ubuntu/CourseData/CG_data/Module6/scripts/* $CNA_WORKSPACE/scripts	# link to scripts
-ln -s /home/ubuntu/CourseData/CG_data/Module6/ref_data/* $CNA_WORKSPACE/ref_data	# link to reference genome data
+ln -s /home/ubuntu/CourseData/CG_data/Module6/data/* $CNA_WORKSPACE/data	
+ln -s /home/ubuntu/CourseData/CG_data/Module6/install/* $CNA_WORKSPACE/install	
+ln -s /home/ubuntu/CourseData/CG_data/Module6/scripts/* $CNA_WORKSPACE/scripts	
+ln -s /home/ubuntu/CourseData/CG_data/Module6/ref_data/* $CNA_WORKSPACE/ref_data	
 ```
 
 Check that you have four new directories in your workspace:
