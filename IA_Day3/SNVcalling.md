@@ -44,16 +44,16 @@ Run the install script:
 bash Anaconda2-5.1.0-Linux-x86_64.sh
 ```
 * Hold Enter to skip Readme
-* Type yes
+* Type "yes"
 * Install to: /home/ubuntu/software/anaconda (or wherever you would like to keep this forever)
 * "no" do not modify .bashrc (although you could if you want this to be maintained permanently)
-* no do not get microsoft thing
+* "no" do not get microsoft thing
 
 Add conda to path
 ```
 export PATH="/home/ubuntu/software/anaconda/bin:$PATH"
 ```
-This line is what the conda installer offered to add to ~/.bashrc
+This line is what the conda installer offered to add to \~/.bashrc
 
 You can add this manually if you would like.
 
@@ -96,9 +96,9 @@ cd $IA_HOME
 What does ANNOVAR do?
 
 
-The following command is what we ran yesterday.
+The following command is what we ran earlier today.
 
-(Note that we would need to redefine our environmental variable $ANNOVAR_DIR: 
+Note that you would need to redefine our environmental variable $ANNOVAR_DIR if you closed your AWS session: 
 ```
 $ANNOVAR_DIR=/home/ubuntu/CourseData/CG_data/Module7/install/annovar
 ```
@@ -118,9 +118,6 @@ $ANNOVAR_DIR/humandb/ \
 ```
 
 Make environmental variables to refer to out input and output files:
-
-infile=$SNV_MODULE_DIR/results/mutect/mutect_passed.vcf
-out_file=$SNV_MODULE_DIR/results/mutect.hg19_multianno.vcf
 
 ```
 SNV_MODULE_DIR="/home/ubuntu/workspace/Module7_snv"
@@ -151,25 +148,23 @@ The ANNOVAR user-guide provides more info
 Certain annotations provide a single piece of information:
 
 
-cytoBand = Position along chromosome based on Giemsa-stained chromosomes
+* cytoBand = Position along chromosome based on Giemsa-stained chromosomes
 
 
 While others provide A LOT of information:
 
 
-dbnsfp30a = "SIFT, PolyPhen2 HDIV, PolyPhen2 HVAR, LRT, MutationTaster, MutationAssessor, FATHMM, MetaSVM, MetaLR, VEST, CADD, GERP++, DANN, fitCons, PhyloP and SiPhy scores, but ONLY on coding variants"
+* dbnsfp30a = "SIFT, PolyPhen2 HDIV, PolyPhen2 HVAR, LRT, MutationTaster, MutationAssessor, FATHMM, MetaSVM, MetaLR, VEST, CADD, GERP++, DANN, fitCons, PhyloP and SiPhy scores, but ONLY on coding variants"
 
 
 Explore a few with the following links:
 
 
-[SIFT](http://sift.jcvi.org/) predicts whether an amino acid substitution affects protein function. 
+* [SIFT](http://sift.jcvi.org/) predicts whether an amino acid substitution affects protein function. 
 
+* [PolyPhen-2](http://genetics.bwh.harvard.edu/pph2/)  (Polymorphism Phenotyping v2) is a tool which predicts possible impact of an amino acid substitution on the structure and function of a human protein using straightforward physical and comparative considerations.
 
-[PolyPhen-2](http://genetics.bwh.harvard.edu/pph2/)  (Polymorphism Phenotyping v2) is a tool which predicts possible impact of an amino acid substitution on the structure and function of a human protein using straightforward physical and comparative considerations.
-
-
-[SiPhy](http://portals.broadinstitute.org/genome_bio/siphy/index.html) implements rigorous statistical tests to detect bases under selection from a multiple alignment data. 
+* [SiPhy](http://portals.broadinstitute.org/genome_bio/siphy/index.html) implements rigorous statistical tests to detect bases under selection from a multiple alignment data. 
 
 
 ### Adding additional databases to ANNOVAR
@@ -239,7 +234,7 @@ Perform the following steps to investigate one of our SNV calls:
 
 ### Additional commandline SNV practice
 
-If there is time and interest, we can try an additional subset of the data, following the Module7_snv lab from yesterday.
+If there is time and interest, we can try an additional subset of the data, following the Module7_snv lab from earlier today.
 
 Subset the reads by specifcying a sub-region of the exome bam files using samtools view.
 * b = output bam
@@ -280,38 +275,27 @@ cat *.fa > hg38_all.fa
 
 ### TCGA (moved to "Genomic Data Commons")
 
-* https://gdc.cancer.gov/
+* [https://gdc.cancer.gov](https://gdc.cancer.gov/)
     * Launch Data Portal
 
 ### cBioPortal
 Data for cancer genomics
 
-* http://www.cbioportal.org/
+* [http://www.cbioportal.org/](http://www.cbioportal.org/)
 
 
 ## StatQuest YouTube Series (Joshua Starmer @ UNC-Chapel Hill)
-[StatQuest Home](https://www.youtube.com/user/joshstarmer/about)
+* [StatQuest Home](https://www.youtube.com/user/joshstarmer/about)
 
 Some personal favorites:
-
-[RPKM, FPKM and TPM](https://www.youtube.com/watch?v=TTUrtCY2k-w)
-
-
-[Principal Component Analysis (PCA)](https://www.youtube.com/watch?v=_UVHneBUBW0)
-
-
-[FDR and the Benjamini-Hochberg Method](https://www.youtube.com/watch?v=K8LQSvtjcEo)
+* [RPKM, FPKM and TPM](https://www.youtube.com/watch?v=TTUrtCY2k-w)
+* [Principal Component Analysis (PCA)](https://www.youtube.com/watch?v=_UVHneBUBW0)
+* [FDR and the Benjamini-Hochberg Method](https://www.youtube.com/watch?v=K8LQSvtjcEo)
 
 
 ## Some cool tools
 ### FastQC
-Quickly checking the quality of a sequencing run
-
-* https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-
+* [Quickly checking the quality of a sequencing run](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
 ### FastQ Screen
-A cool tool for checking for contamination in your sequencing libraries
-
-* https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/
-
+* [A cool tool for checking for contamination in your sequencing libraries](https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/)
