@@ -49,9 +49,10 @@ STRELKA_DIR=/home/ubuntu/CourseData/CG_data/Module7/install/strelka/bin/
 For this lab module, we'll be using exome data on the HCC1395 breast cancer cell line. The tumour and normal bams have already been processed and placed on the server. So we'll create a soft link to the directory that it's stored. We'll also create a soft link to where the reference genome is stored, as well as a folder we'll use later on in the lab:
 
 ```
-ln -s /home/ubuntu/CourseData/CG_data/Module7/HCC1395
-ln -s /home/ubuntu/CourseData/CG_data/Module7/ref_data
-ln -s /home/ubuntu/CourseData/CG_data/Module7/snv_analysis
+mkdir HCC1395 ref_data snv_analysis
+ln -s /home/ubuntu/CourseData/CG_data/Module7/HCC1395/* HCC1395
+ln -s /home/ubuntu/CourseData/CG_data/Module7/ref_data/* ref_data
+ln -s /home/ubuntu/CourseData/CG_data/Module7/snv_analysis/* snv_analysis
 ```
 
 For this lab we're going to limit our analysis to just the 7MB and 8MB region of chromosome 17 to ensure processing occurs quickly. The files we'll be focusing on can be viewed using the following command:
