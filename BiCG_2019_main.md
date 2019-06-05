@@ -138,8 +138,6 @@ It is in your best interest to complete these before the workshop.
 
 *<font color="#827e9c">Sorana Morrissy</font>* 
 
-[Lab Lecture]()  
-
 [Lab Practical](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab)  
 
 * [Installation](https://bioinformaticsdotca.github.io/BiCG_2019_Module6_Lab-Installation)  
