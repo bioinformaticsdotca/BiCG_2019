@@ -51,7 +51,7 @@ bash Anaconda2-5.1.0-Linux-x86_64.sh
 
 Add conda to path
 ```
-export PATH="/home/ubuntu/software/anaconda2/bin:$PATH"
+export PATH="/home/ubuntu/software/anaconda/bin:$PATH"
 ```
 This line is what the conda installer offered to add to ~/.bashrc
 
@@ -98,7 +98,10 @@ What does ANNOVAR do?
 
 The following command is what we ran yesterday.
 
-(Note that we would need to redefine our environmental variable $ANNOVAR_DIR for this command to work.) ie:ANNOVAR_DIR=/home/ubuntu/CourseData/CG_data/Module7/install/annovar
+(Note that we would need to redefine our environmental variable $ANNOVAR_DIR: 
+```
+$ANNOVAR_DIR=/home/ubuntu/CourseData/CG_data/Module7/install/annovar
+```
 
 Also your mutect_passed.vcf is probably in "/home/ubuntu/workspace/Module7_snv/results/mutect/mutect_passed.vcf"
 ```
