@@ -199,6 +199,11 @@ curl -L https://github.com/lh3/minimap2/releases/download/v2.16/minimap2-2.16_x6
 ```
 pip install multiqc
 ```
+### MuTect
+You need to sign in to download from https://software.broadinstitute.org/cancer/cga/mutect_download
+```
+unzip muTect-1.1.4-bin.zip
+```
 ### Picard
 ```
 wget https://github.com/broadinstitute/picard/releases/download/2.18.26/picard.jar
