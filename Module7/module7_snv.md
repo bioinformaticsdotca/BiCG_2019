@@ -275,7 +275,7 @@ Therefore, to convert the MuTect VCF file into a tabular format containing only 
 java -jar $SNPEFF_DIR/SnpSift.jar extractFields -e "." results/annotated/mutect.hg19_multianno.vcf CHROM POS REF ALT Func.refGene Gene.refGene cytoBand ExonicFunc.refGene avsnp147 GEN[0].FA GEN[1].FA > results/mutect/mutect_passed_tabbed.txt
 ```
 
-We can view the new tab delimited file in our browser at http://XX.oicrcbw.ca/Module7_snv.
+We can view the new tab delimited file in our browser at http://XX.oicrcbw.ca/Module7_snv/results/mutect (click mutect_passed_tabbed.txt)
 
 To convert the Strelka VCF file into a tabular format into a similar format containing the chromosome, position, reference allele, alternate allele, depth of normal, depth of tumour, # of A's, C's, G's, and T's in normal and tumour (two values each representing "stringent,permissive" filter tiers):
 
@@ -327,8 +327,7 @@ In a web browser, navigate to:
 http://xx.oicrcbw.ca:8080/  
 Replacing xx with your student number.
 
-Within RStudio, navigate to workspace/Module7_snv/snv_analysis  
-Open snv_analysis.Rmd
+Within RStudio, click File > Open File > workspace/Module7_snv/snv_analysis/snv_analysis.Rmd
 
 
 (Alternatively, open a new RMarkdown file and paste the contents of the file [here](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2018/master/module7_snv/snv_analysis.txt).)    
