@@ -145,10 +145,8 @@ grep "INFO=" $out_file | grep -E "refGene|cytoBand|genomicSuperDups|1000g2015aug
 Note that "annotation provided by ANNOVAR" is not a terribly helpful descriptor
 
 The ANNOVAR user-guide provides more info
-```
-http://annovar.openbioinformatics.org/en/latest/user-guide/download/
-http://annovar.openbioinformatics.org/en/latest/user-guide/filter/
-```
+* http://annovar.openbioinformatics.org/en/latest/user-guide/download/
+* http://annovar.openbioinformatics.org/en/latest/user-guide/filter/
 
 Certain annotations provide a single piece of information:
 
@@ -176,13 +174,11 @@ Explore a few with the following links:
 
 ### Adding additional databases to ANNOVAR
 
-DO NOT run the following step today...
-
-but in the future, you can download new annotations for use within annovar using:
+**DO NOT run the following step today** (but in the future, you can download new annotations for use within annovar using:)
 ```
 annotate_variation.pl -buildver hg19 -downdb -webfrom annovar <Table Name>
 ```
-We are skipping this today as the downloads can be very large and slow.
+**We are skipping this today as the downloads can be very large and slow.**
 
 
 ### Analysing SNV output
@@ -209,9 +205,7 @@ Looking at the annotated exonic functions, which SNV(s) might be expected to hav
 
 ### Interactive exploration of SNVs
 To further investigate this, use a web browser to navigate to St. Jude ProteinPaint
-```
-https://proteinpaint.stjude.org/
-```
+* https://proteinpaint.stjude.org/
 
 Perform the following steps to investigate one of our SNV calls:
 
@@ -256,26 +250,24 @@ This is another small region that should contain verified SNVs
 
 ```
 samtools view -bh \
-/home/ubuntu/CourseData/CG_data/sample_data/2017_datasets/Module5/HCC1395/HCC1395_exome_normal.ordered.bam \
+/home/ubuntu/CourseData/Module7/HCC1395/HCC1395_exome_normal.ordered.bam \
 12:48000000-50000000 \
--o /home/ubuntu/CourseData/CG_data/sample_data/HCC1395_subset/HCC1395_exome_normal.12.48MB-50MB.bam
+-o HCC1395_exome_normal.12.48MB-50MB.bam
 
 samtools view -bh \
-/home/ubuntu/CourseData/CG_data/sample_data/2017_datasets/Module5/HCC1395/HCC1395_exome_tumour.ordered.bam \
+/home/ubuntu/CourseData/CG_data/Module7/HCC1395/HCC1395_exome_tumour.ordered.bam \
 12:48000000-50000000 \
--o /home/ubuntu/CourseData/CG_data/sample_data/HCC1395_subset/HCC1395_exome_tumour.12.48MB-50MB.bam
+-o HCC1395_exome_tumour.12.48MB-50MB.bam
 ```
 
 ## Database resources
 ### UCSC Genome Browser
 
-```
-https://genome.ucsc.edu/
-```
-* Downloads
-* Genome Data
-* Human
-* Full Dataset
+* https://genome.ucsc.edu/
+    * Downloads
+    * Genome Data
+    * Human
+    * Full Dataset
 
 Download a zip containining separate fasta files for each chromosome, unzip, then concatenate these files into one.
 
@@ -287,16 +279,15 @@ cat *.fa > hg38_all.fa
 
 
 ### TCGA (moved to "Genomic Data Commons")
-```
-https://gdc.cancer.gov/
-```
-* Launch Data Portal
+
+* https://gdc.cancer.gov/
+    * Launch Data Portal
 
 ### cBioPortal
 Data for cancer genomics
-```
-http://www.cbioportal.org/
-```
+
+* http://www.cbioportal.org/
+
 
 ## StatQuest YouTube Series (Joshua Starmer @ UNC-Chapel Hill)
 [StatQuest Home](https://www.youtube.com/user/joshstarmer/about)
@@ -315,14 +306,12 @@ Some personal favorites:
 ## Some cool tools
 ### FastQC
 Quickly checking the quality of a sequencing run
-```
-https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-```
+
+* https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 
 ### FastQ Screen
 A cool tool for checking for contamination in your sequencing libraries
 
-```
-https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/
-```
+* https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/
+
