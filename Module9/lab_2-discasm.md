@@ -22,7 +22,6 @@ These tools can be used separately or synergistically. In this tutorial, we show
 
 All software and data required to run through the tutorial is installed locally on the server. You just need to copy it over to your workspace like so:
 
-     mkdir ~/workspace/Module9
      cd ~/workspace/Module9
      cp -r ~/CourseData/CG_data/Module9/GMAP-fusion .
 
