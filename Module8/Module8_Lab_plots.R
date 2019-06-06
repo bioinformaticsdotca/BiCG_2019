@@ -194,9 +194,9 @@ dev.off()
 ls()
 save.image("save_module8_lab_plots.RData")
 
-#The output file can be viewed in your browser at the following url:
-#Note, you must replace __YOUR_IP_ADDRESS__ with your own amazon instance IP
-#http://__YOUR_IP_ADDRESS__/workspace/rnaseq/de/ballgown/ref_only/assignment_Supplementary_R_output.pdf
+#The output file can be downloaded in your browser at the following url:
+## http://##.oicrcbw.ca/Module8/Module8_Lab/de/ballgown/ref_only/assignment_Supplementary_R_output.pdf
+## with your student number instead of ## 
 #To exit R type:
 quit(save="no")
 
