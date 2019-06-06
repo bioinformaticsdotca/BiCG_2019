@@ -52,8 +52,8 @@ write.table(results_genes,"carcinoma_vs_normal_gene_results_filtered.tsv",sep="\
 
 
 # Identify the significant genes with q-value < 0.05
-sig_transcripts_1= subset(results_transcripts,results_transcripts$qval<0.05)
-sig_genes_1= subset(results_genes,results_genes$qval<0.05)
+sig_transcripts= subset(results_transcripts,results_transcripts$qval<0.05)
+sig_genes= subset(results_genes,results_genes$qval<0.05)
 
 
 
