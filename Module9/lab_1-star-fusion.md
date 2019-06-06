@@ -65,6 +65,10 @@ These data are included in a STAR-Fusion-Tutorial/ subdirectory. Change to this 
 
     cd STAR-Fusion-Tutorial
 
+Add write permissions to the files (because we copied them from a directory where we did not have write permissions):
+
+    chmod +w *
+
 and examine the files that exist there:
 
     ls -l
@@ -94,7 +98,7 @@ To build our custom tutorial-supporting CTAT genome lib, run the following along
 
 
 
-   ${STAR_FUSION_HOME}/FusionFilter/prep_genome_lib.pl \
+    ${STAR_FUSION_HOME}/FusionFilter/prep_genome_lib.pl \
             --genome_fa minigenome.fa \
             --gtf minigenome.gtf \
             --fusion_annot_lib CTAT_HumanFusionLib.mini.dat.gz
@@ -107,7 +111,7 @@ Running the above will create a 'ctat_genome_lib_build_dir/' directory and popul
 
 Run STAR-Fusion to predict fusions like so:
 
-   ${STAR_FUSION_HOME}/STAR-Fusion \
+    ${STAR_FUSION_HOME}/STAR-Fusion \
            --left_fq rnaseq_1.fastq.gz \
            --right_fq rnaseq_2.fastq.gz \
            --genome_lib_dir ctat_genome_lib_build_dir 
@@ -116,12 +120,12 @@ Run STAR-Fusion to predict fusions like so:
 
 By default, the outputs are written to a subdirectory 'STAR-Fusion_outdir', where you'll find the two primary output files:
 
-    star-fusion.fusion_predictions.tsv  # fusion predictions including the identity of all evidence reads
-    star-fusion.fusion_predictions.abridged.tsv # shortened version of the above, lacking the voluminous read identities
+* star-fusion.fusion_predictions.tsv  - fusion predictions including the identity of all evidence reads
+* star-fusion.fusion_predictions.abridged.tsv - shortened version of the above, lacking the voluminous read identities
 
 Take a look at the format of the abridged output file:
 
-   head head STAR-Fusion_outdir/star-fusion.fusion_predictions.abridged.tsv  | column -t 
+    head STAR-Fusion_outdir/star-fusion.fusion_predictions.abridged.tsv  | column -t | less -S
 
 ```
 #FusionName            JunctionReadCount  SpanningFragCount  SpliceType           LeftGene                     LeftBreakpoint        RightGene      RightBreakpoint       LargeAnchorSupport  FFPM      LeftBreakDinuc  LeftBreakEntropy  RightBreakDinuc  RightBreakEntropy  annots
@@ -162,15 +166,15 @@ Examine the files found there:
 
 The most relevant output files include:
 
-    finspector.fusion_predictions.final # the 'in silico validated' fusion predictions
-    finspector.fusion_predictions.final.abridged.FFPM.annotated  # the abridged version including annotations
+* finspector.fusion_predictions.final - the 'in silico validated' fusion predictions
+* finspector.fusion_predictions.final.abridged.FFPM.annotated  - the abridged version including annotations
 
 and files that are useful for viewing in IGV:
 
-    finspector.bed  # reference transcript structure annotations in BED format
-    finspector.consolidated.cSorted.bam # reads aligned to the fusion contigs
-    finspector.junction_reads.bam # junction / split-reads supporting fusions
-    finspector.spanning_reads.bam # fusion spanning fragment evidence 
+* finspector.bed  - reference transcript structure annotations in BED format
+* finspector.consolidated.cSorted.bam - reads aligned to the fusion contigs
+* finspector.junction_reads.bam - junction / split-reads supporting fusions
+* finspector.spanning_reads.bam - fusion spanning fragment evidence 
 
 
 Load these files into IGV for inspecting the evidence supporting the fusions.
@@ -198,12 +202,12 @@ Use [Trinity](http://trinityrnaseq.github.io) to de novo reconstruct fusion tran
     
 Now, reexamine the contents of the 'STAR-Fusion_outdir/FusionInspector-validate/' directory:
 
-   ls -ltr STAR-Fusion_outdir/FusionInspector-validate/
+    ls -ltr STAR-Fusion_outdir/FusionInspector-validate/
 
 You'll find additional outputs:
 
-    finspector.gmap_trinity_GG.fusions.fasta # de novo reconstructed fusion transcripts
-    finspector.gmap_trinity_GG.fusions.gff3.bed # fusion transcript structure in the fusion contig context
+* finspector.gmap_trinity_GG.fusions.fasta - de novo reconstructed fusion transcripts
+* finspector.gmap_trinity_GG.fusions.gff3.bed - fusion transcript structure in the fusion contig context
 
 The 'finspector.gmap_trinity_GG.fusions.gff3.bed' can be uploaded into IGV for viewing along with the read evidence.
 
@@ -292,6 +296,4 @@ No...  you can actually have one command that includes all relevant parameters a
 ## Closing Remarks
 
 Congratulations on making it through the CTAT Fusion tutorial.  For more information on Trinity CTAT and to stay current with our activities and developments, visit our [Trinity CTAT](https://github.com/NCIP/Trinity_CTAT/wiki) page and join our [Google Forum](https://groups.google.com/forum/#!forum/trinity_ctat_users)
-
-
 
