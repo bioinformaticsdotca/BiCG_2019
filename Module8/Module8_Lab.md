@@ -45,7 +45,6 @@ Goals:
 - Obtain the files necessary for data processing 
 - Familiarize yourself with reference and annotation file format 
 - Familiarize yourself with sequence FASTQ format 
-Create a working directory ~/workspace/Module8/Module8_Lab/ to store this exercise. Then create a unix environment variable named RNA_ASSIGNMENT that stores this path for convenience in later commands.
 
 ## Setup
 
@@ -125,23 +124,24 @@ An easy way to figure out the number of reads is to make use of the command ‘w
 cd $RNA_LAB/fasta/
 head carcinoma_C02_read1.fasta
 ```
->HWUSI-EAS230-R:2:88:885:1584#0/1
+\>HWUSI-EAS230-R:2:88:885:1584#0/1
 GCTCTTCGGTTCTTTCCTTCTTCAAGTGGTATGCTC
->HWUSI-EAS230-R:2:15:691:382#0/1
+\>HWUSI-EAS230-R:2:15:691:382#0/1
 GGATTTTGACAAATCCTTATCTCCGGCCACCCCATA
->HWUSI-EAS230-R:2:52:111:1052#0/1
+\>HWUSI-EAS230-R:2:52:111:1052#0/1
 GCTGGAAAGCCACCAAGATGCTGACATTGAAGACTT
->HWUSI-EAS230-R:2:28:1640:236#0/1
+\>HWUSI-EAS230-R:2:28:1640:236#0/1
 CTCTGAGACGTCACCAAGTGCGGCGCCGGCAGCCTG
->HWUSI-EAS230-R:2:77:1205:89#0/1
+\>HWUSI-EAS230-R:2:77:1205:89#0/1
 GAGGGACACATTTGCTGTTTCTCCCGCAAGCAGATG
-Running this command only give you 2 x read number:
+
+Running this command only gives you 2 x read number (*note: replace `YourFastaFile.fasta` with the actual name of a fasta file*):
 ```
 cd $RNA_LAB/fasta/
 wc -l YourFastaFile.fasta
 wc -l *
 ```
-Or  for the number of reads directly:
+Or  for the number of reads directly (*note: replace `YourFastaFile.fasta` with the actual name of a fasta file*):
 ```
 egrep ">" YourFastaFile.fasta |wc -l
 ```
@@ -269,7 +269,7 @@ more carcinoma_vs_normal.csv
 R
 ```
 
-The file [Module8_Lab_ballgown.R](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_ballgown.R) will help you to run differential expression analysis with the Ballgown package.
+The file [Module8_Lab_ballgown.R](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_ballgown.R) will help you to run differential expression analysis with the Ballgown package. Copy and paste the commands from this file into your terminal once R has started (you should see ">" as a prompt).
 
 Have a look at the Ballgrown package and manual document as well
 https://www.bioconductor.org/packages/release/bioc/html/ballgown.html
@@ -282,6 +282,18 @@ https://www.bioconductor.org/packages/release/bioc/html/ballgown.html
 
 **A9)** The CummerBund package provides a wide variety of plots that can be used to visualize a gene’s expression profile or genes that are differentially expressed. Some of these plots include heatmaps, boxplots, and volcano plots. Alternatively, you can use custom plots using ggplot2 command or base R plotting commands such as those provided in the supplementary tutorials. Start with something very simple such as a scatter plot of tumor vs. normal FPKM values.
 
-**see [Module8_Lab_plots.R](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_plots.R) for plotting options**
-and expected plots [Module8_Lab_Supplementary_R_output.pdf](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_Supplementary_R_output.pdf)
+**see [Module8_Lab_plots.R](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_plots.R) for plotting options**.
+
+When you finished running the commands from Module8_Lab_ballgown.R, you should have exited R (no more ">" prompt). Type R into the terminal again to restart R:
+```
+R
+```
+
+If you ever get stuck in R and want to return to the terminal, type `q()` to exit R.
+
+Your plots will be at http://##.oicrcbw.ca/Module8/Module8_Lab/de/ballgown/ref_only/Module8_Lab_Supplementary_R_output.pdf
+
+Remember to replace "##" with your instance number.
+
+Compare your plots to the expected plots: [Module8_Lab_Supplementary_R_output.pdf](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module8/Module8_Lab_Supplementary_R_output.pdf)
 
