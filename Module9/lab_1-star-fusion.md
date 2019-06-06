@@ -27,7 +27,9 @@ The Trinity CTAT Fusion workflow involves first running STAR-Fusion to identify 
 
 All software and data we'll be using for this tutorial are installed on the server.  To configure the software for your use, you'll need to copy the bundle to your workspace like so:
 
-   cp -r ~/CourseData/CG_data/Module9/STAR-Fusion/STAR-Fusion-Tutorial .
+    mkdir ~/workspace/Module9
+    cd ~/workspace/Module9
+    cp -r ~/CourseData/CG_data/Module9/STAR-Fusion/STAR-Fusion-Tutorial .
 
 Set the following environmental variable like so:
 
@@ -61,11 +63,11 @@ The tutorial includes a small data set that can be leveraged using modest comput
 
 These data are included in a STAR-Fusion-Tutorial/ subdirectory. Change to this directory:
 
-   cd STAR-Fusion-Tutorial
+    cd STAR-Fusion-Tutorial
 
 and examine the files that exist there:
 
-   ls -l
+    ls -l
 
 
 ```
