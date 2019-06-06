@@ -220,7 +220,7 @@ It is in your best interest to complete these before the workshop.
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1eM8iaL9MPzwNPL7DZ4WtOzTz4BHTe0v9/view?usp=sharing)       
 [Lecture in PPT](https://drive.google.com/a/bioinformatics.ca/file/d/1EBdqVdjHkJ2TQ8VsFeYAttFwzaWSf2CO/view?usp=sharing)
 
-[Lab Practical]()  
+[Lab Practical](https://drive.google.com/a/bioinformatics.ca/file/d/179oA74NjFIt9-d_FLKGM9_Gubtw0jbR3/view?usp=sharing)  
 
 [Lab Script](https://raw.githubusercontent.com/bioinformaticsdotca/BiCG_2019/master/Module12/BiCG_2019_Module12_Lab-participant-script.r)  
 
@@ -229,10 +229,6 @@ It is in your best interest to complete these before the workshop.
 ## Post Workshop 
 
 Post workshop content for data sets, docker containers, AWS image, tools and install instructions can be found [here](https://bioinformaticsdotca.github.io/BiCG_2019_Post-Workshop)  
-
-## Recap
-
-[Overview of workshop]()  
 
 ***
 
