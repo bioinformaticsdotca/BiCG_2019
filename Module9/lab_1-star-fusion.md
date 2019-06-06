@@ -65,9 +65,10 @@ These data are included in a STAR-Fusion-Tutorial/ subdirectory. Change to this 
 
     cd STAR-Fusion-Tutorial
 
-Add write permissions to the files (because we copied them from a directory where we did not have write permissions):
+Add write permissions to the files and directory (because we copied them from a directory where we did not have write permissions):
 
     chmod +w *
+    chmod +w .
 
 and examine the files that exist there:
 

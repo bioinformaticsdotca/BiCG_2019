@@ -51,6 +51,7 @@ The data here correspond to a small region of human chromosome 2 and RNA-Seq rea
 Add write permissions to the files (because we copied them from a directory where we did not have write permissions):
 
     chmod +w *
+    chmod +w .
 
 List the files in the Tutorial directory:
 
