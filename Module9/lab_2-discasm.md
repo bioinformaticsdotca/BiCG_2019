@@ -190,7 +190,7 @@ PLA2R1--RBMS1	199	41	TRINITY_something...	272-271	PLA2R1	chr2	272580	RBMS1	chr2	
 
 ### Exploring fusions using the UCSC Genome Browser
 
-From the 'discasm/trinity_out_dir/Trinity.fasta' file, locate the fasta-formatted sequence for the transcript predicted as a fusion. (Try using 'less' unix utility and searching for the entry).
+From the 'discasm/discam.Trinity.fasta' file, locate the fasta-formatted sequence for the transcript predicted as a fusion. (Try using 'less' unix utility and searching for the entry).
 
 *if you can't easily locate yours, [here's mine](fusion_transcript_example.md)*
 
