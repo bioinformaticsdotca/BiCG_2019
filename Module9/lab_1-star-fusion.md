@@ -172,13 +172,14 @@ The most relevant output files include:
 
 and files that are useful for viewing in IGV:
 
-* finspector.bed  - reference transcript structure annotations in BED format
+* finspector.fa - custom reference genome fasta file
+* finspector.bed.sorted.bed.gz  - reference transcript structure annotations in BED format
 * finspector.consolidated.cSorted.bam - reads aligned to the fusion contigs
 * finspector.junction_reads.bam - junction / split-reads supporting fusions
 * finspector.spanning_reads.bam - fusion spanning fragment evidence 
 
 
-Load these files into IGV for inspecting the evidence supporting the fusions.
+Load these files into IGV for inspecting the evidence supporting the fusions. Load `finspector.fa` first (Genomes > Load from URL), then the `bed` and `bam` files listed above (File > Load from URL). The URLs can be copied from http://##.oicrcbw.ca/Module9/STAR-Fusion-Tutorial/STAR-Fusion_outdir/FusionInspector-validate (Remember to replace ## with your student number)
 
 If you need the IGV software, you can launch it from [here](http://software.broadinstitute.org/software/igv/download) - just find the 'Launch' button in the center of that linked web page.
 
