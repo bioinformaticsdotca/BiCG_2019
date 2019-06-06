@@ -10,16 +10,12 @@ pheno_data = read.csv("carcinoma_vs_normal.csv")
 bg = ballgown(samples=as.vector(pheno_data$path),pData=pheno_data)
 
 
-
 # Display a description of this object
 bg
 
 # Load all attributes including gene name
 bg_table = texpr(bg, 'all')
 bg_gene_names = unique(bg_table[, 9:10])
-
-
-
 
 
 # Save the ballgown object to a file for later use
@@ -55,9 +51,10 @@ write.table(results_transcripts,"carcinoma_vs_normal_transcript_results_filtered
 write.table(results_genes,"carcinoma_vs_normal_gene_results_filtered.tsv",sep="\t")
 
 
-# Identify the significant genes with p-value < 0.05
-sig_transcripts = subset(results_transcripts,results_transcripts$pval<0.05)
-sig_genes = subset(results_genes,results_genes$pval<0.05)
+# Identify the significant genes with q-value < 0.05
+sig_transcripts_1= subset(results_transcripts,results_transcripts$qval<0.05)
+sig_genes_1= subset(results_genes,results_genes$qval<0.05)
+
 
 
 # Output the signifant gene results to a pair of tab delimited files
