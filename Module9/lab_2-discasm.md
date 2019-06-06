@@ -22,7 +22,7 @@ These tools can be used separately or synergistically. In this tutorial, we show
 
 All software and data required to run through the tutorial is installed locally on the server. You just need to copy it over to your workspace like so:
 
-    % cp -r ~/CourseData/CG_data/Module9/GMAP-fusion .
+     cp -r ~/CourseData/CG_data/Module9/GMAP-fusion .
 
 This will add the tools GMAP-fusion and DISCASM along with the required tutorial data.
 
@@ -30,17 +30,17 @@ We next just need to do a little environment configuration so that the system wi
 
 Set up the following environmental variables like so:
 
-    %  cd GMAP-fusion/
+      cd GMAP-fusion/
      
-    %  export GMAP_FUSION_HOME=`pwd`
-    %  export DISCASM_HOME=`pwd`/DISCASM
+      export GMAP_FUSION_HOME=`pwd`
+      export DISCASM_HOME=`pwd`/DISCASM
 
 
 ### Tutorial data contents
 
 Next enter the Tutorial/ subdirectory
 
-    %  cd Tutorial
+      cd Tutorial
 
 The data here correspond to a small region of human chromosome 2 and RNA-Seq reads derived from a breast cancer cell line [HCC1395](https://github.com/genome/gms/wiki/HCC1395-WGS-Exome-RNA-Seq-Data), and further supplemented with data from another cell line [SKBR3](https://en.wikipedia.org/wiki/SKBR3) provided by [Henrik Edgren et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3091304/)
 
@@ -48,7 +48,7 @@ The data here correspond to a small region of human chromosome 2 and RNA-Seq rea
 
 List the files in the Tutorial directoryL
 
-    %  ls -l
+      ls -l
     
 ```
 -rw-rw-r-- 1 ubuntu ubuntu  2488924 Mar 14 10:14 HCC1395-miniplus_1.fastq.gz
@@ -77,7 +77,7 @@ The following tutorial will take you through preparing the above provided genome
 
 Run the following to prepare the genome and annotations for use with GMAP-Fusion, DISCASM, STAR, and other processes we'll need for fusion discovery and analysis as part of Trinity CTAT.
 
-    %  $GMAP_FUSION_HOME/ctat-genome-lib-builder/prep_genome_lib.pl \
+      $GMAP_FUSION_HOME/ctat-genome-lib-builder/prep_genome_lib.pl \
           --genome_fa minichr2.fa \
           --gtf minichr2.gtf \
           --gmap_build
@@ -126,7 +126,7 @@ We'll use both of these files when running DISCASM below.
 
 Assemble the discordantly-aligned and genome-unmapped reads using DISCASM with the Trinity assembler, leveraging the outputs from STAR above like so:
 
-    % $DISCASM_HOME/DISCASM --chimeric_junctions Chimeric.out.junction \
+     $DISCASM_HOME/DISCASM --chimeric_junctions Chimeric.out.junction \
                             --aligned_bam Aligned.out.bam \
                             --denovo_assembler Trinity \
                             --left_fq HCC1395-miniplus_1.fastq.gz \
@@ -141,7 +141,7 @@ Once the above completes, you should find the de novo assembled transcripts at:
 
 Take a look at the file:
 
-    % head discasm/discasm.Trinity.fasta 
+     head discasm/discasm.Trinity.fasta 
 .
 
 ```
@@ -161,7 +161,7 @@ ATCTTGAGCGTGCTCCCTGAGTTATCTCAGATTCACTATACCATGCAGATTGAAATGGTGACGCAGATGCTGATGCTGAT
 
 Discordantly-aligned reads are a signature for fusion transcripts.  See if we were able to assembly an fusion transcripts from the discordantly (or unmapped) reads by running GMAP-fusion on the reconstructed transcripts:
 
-    %  $GMAP_FUSION_HOME/GMAP-fusion \
+      $GMAP_FUSION_HOME/GMAP-fusion \
            -T discasm/discasm.Trinity.fasta \
            --left_fq HCC1395-miniplus_1.fastq.gz \
            --right_fq HCC1395-miniplus_2.fastq.gz \
@@ -174,7 +174,7 @@ The fusion predictions will be found as file 'gmapf/GMAP-fusion.final'.
 
 Examine the fusion predictions. Do you find any?
 
-    %  cat gmapf/GMAP-fusion.fusion_predictions.tsv
+      cat gmapf/GMAP-fusion.fusion_predictions.tsv
 
 .
 
@@ -203,7 +203,7 @@ You should find the following results similar to this:
 <img src="https://github.com/bioinformaticsdotca/BiCG_2018/blob/master/module_9_CTAT_fusion_lab/images/blat_search_results.png?raw=true" width="750" />
 
 
-Explore the top two hits that are 100% identical to regions of chromosome 2. 
+Explore the top two hits that are 100 identical to regions of chromosome 2. 
 
 Which genes do they match?  Can you infer where the fusion breakpoint is based on the transcript alignments?
 
@@ -240,7 +240,7 @@ How do the genomic breakpoints compare to the fusion-transcript breakpoints?  Wh
 
 Search the de novo reconstructed transcripts for evidence of viruses using the Centrifuge software along with the database of viral sequences provided.
 
-    % centrifuge -x centrifuge_VirusDB/abv -f \
+     centrifuge -x centrifuge_VirusDB/abv -f \
                  -U discasm/discasm.Trinity.fasta \
                   > centrifuge.matches.txt
 
@@ -248,7 +248,7 @@ The above will identify transcripts with sequence matches to known viruses, with
 
 Examine the 'centrifuge_report.tsv' file.  Were there any matches?
 
-    % cat centrifuge_report.tsv 
+     cat centrifuge_report.tsv 
 
 ```
 name	taxID	taxRank	genomeSize	numReads	numUniqueReads	abundance

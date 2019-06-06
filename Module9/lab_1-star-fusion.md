@@ -27,15 +27,15 @@ The Trinity CTAT Fusion workflow involves first running STAR-Fusion to identify 
 
 All software and data we'll be using for this tutorial are installed on the server.  To configure the software for your use, you'll need to copy the bundle to your workspace like so:
 
-    % cp -r ~/CourseData/CG_data/Module9/STAR-Fusion/STAR-Fusion-Tutorial .
+   cp -r ~/CourseData/CG_data/Module9/STAR-Fusion/STAR-Fusion-Tutorial .
 
 Set the following environmental variable like so:
 
-    %  export STAR_FUSION_HOME=/usr/local/STAR-Fusion-v1.5.0/
+    export STAR_FUSION_HOME=/usr/local/STAR-Fusion-v1.5.0/
     
 now verify that this variable was set:
 
-    % echo $STAR_FUSION_HOME
+    echo $STAR_FUSION_HOME
 
 which should print the path to where the STAR-Fusion software is installed.
 
@@ -61,11 +61,11 @@ The tutorial includes a small data set that can be leveraged using modest comput
 
 These data are included in a STAR-Fusion-Tutorial/ subdirectory. Change to this directory:
 
-    % cd STAR-Fusion-Tutorial
+   cd STAR-Fusion-Tutorial
 
 and examine the files that exist there:
 
-    % ls -l
+   ls -l
 
 
 ```
@@ -92,7 +92,7 @@ To build our custom tutorial-supporting CTAT genome lib, run the following along
 
 
 
-    % ${STAR_FUSION_HOME}/FusionFilter/prep_genome_lib.pl \
+   ${STAR_FUSION_HOME}/FusionFilter/prep_genome_lib.pl \
             --genome_fa minigenome.fa \
             --gtf minigenome.gtf \
             --fusion_annot_lib CTAT_HumanFusionLib.mini.dat.gz
@@ -105,7 +105,7 @@ Running the above will create a 'ctat_genome_lib_build_dir/' directory and popul
 
 Run STAR-Fusion to predict fusions like so:
 
-    % ${STAR_FUSION_HOME}/STAR-Fusion \
+   ${STAR_FUSION_HOME}/STAR-Fusion \
            --left_fq rnaseq_1.fastq.gz \
            --right_fq rnaseq_2.fastq.gz \
            --genome_lib_dir ctat_genome_lib_build_dir 
@@ -119,7 +119,7 @@ By default, the outputs are written to a subdirectory 'STAR-Fusion_outdir', wher
 
 Take a look at the format of the abridged output file:
 
-    % head head STAR-Fusion_outdir/star-fusion.fusion_predictions.abridged.tsv  | column -t 
+   head head STAR-Fusion_outdir/star-fusion.fusion_predictions.abridged.tsv  | column -t 
 
 ```
 #FusionName            JunctionReadCount  SpanningFragCount  SpliceType           LeftGene                     LeftBreakpoint        RightGene      RightBreakpoint       LargeAnchorSupport  FFPM      LeftBreakDinuc  LeftBreakEntropy  RightBreakDinuc  RightBreakEntropy  annots
@@ -143,7 +143,7 @@ FusionInspector comes bundled with the STAR-Fusion software and can be launched 
 
 Run FusionInspector via the STAR-Fusion interface like so:
 
-    %  ${STAR_FUSION_HOME}/STAR-Fusion \
+    ${STAR_FUSION_HOME}/STAR-Fusion \
          --left_fq rnaseq_1.fastq.gz \
          --right_fq rnaseq_2.fastq.gz \
          --genome_lib_dir ctat_genome_lib_build_dir \
@@ -155,7 +155,7 @@ All FusionInspector outputs will be found in the directory 'STAR-Fusion_outdir/F
 
 Examine the files found there:
 
-    %  ls -ltr STAR-Fusion_outdir/FusionInspector-validate/
+    ls -ltr STAR-Fusion_outdir/FusionInspector-validate/
 
 
 The most relevant output files include:
@@ -185,7 +185,7 @@ More details about FusionInspector can be found on the [FusionInspector document
 
 Use [Trinity](http://trinityrnaseq.github.io) to de novo reconstruct fusion transcripts like so:
 
-    %  ${STAR_FUSION_HOME}/STAR-Fusion \
+    ${STAR_FUSION_HOME}/STAR-Fusion \
          --left_fq rnaseq_1.fastq.gz \
          --right_fq rnaseq_2.fastq.gz \
          --genome_lib_dir ctat_genome_lib_build_dir \
@@ -196,7 +196,7 @@ Use [Trinity](http://trinityrnaseq.github.io) to de novo reconstruct fusion tran
     
 Now, reexamine the contents of the 'STAR-Fusion_outdir/FusionInspector-validate/' directory:
 
-    % ls -ltr STAR-Fusion_outdir/FusionInspector-validate/
+   ls -ltr STAR-Fusion_outdir/FusionInspector-validate/
 
 You'll find additional outputs:
 
@@ -210,7 +210,7 @@ The 'finspector.gmap_trinity_GG.fusions.gff3.bed' can be uploaded into IGV for v
 
 To explore the effect the fusion events have on coding regions of the fused genes, you can run:
 
-    %  ${STAR_FUSION_HOME}/STAR-Fusion \
+    ${STAR_FUSION_HOME}/STAR-Fusion \
          --left_fq rnaseq_1.fastq.gz \
          --right_fq rnaseq_2.fastq.gz \
          --genome_lib_dir ctat_genome_lib_build_dir \
@@ -279,7 +279,7 @@ You should now find an output file 'STAR-Fusion_outdir/star-fusion.fusion_predic
 
 No...  you can actually have one command that includes all relevant parameters and you can run STAR-Fusion followed by FusionInspector, de novo reconstruction, and explore coding region impacts like so:
 
-    %  ${STAR_FUSION_HOME}/STAR-Fusion \
+    ${STAR_FUSION_HOME}/STAR-Fusion \
          --left_fq rnaseq_1.fastq.gz \
          --right_fq rnaseq_2.fastq.gz \
          --genome_lib_dir ctat_genome_lib_build_dir \
