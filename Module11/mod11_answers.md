@@ -44,7 +44,7 @@ Example 2.
  
 ![img1](https://github.com/bioinformaticsdotca/CSHL_2019/blob/master/Module14/Reactome1-1.png?raw=true)  
 
-11.	The ReactomeFIViz app splits samples into two groups: samples having no genes mutated in a module (green line), and samples having genes mutated in the module (red line). The plugin uses the log-rank test to compare the two survival curves, and estimates p-values. In Modules 4 (KM: p=0.00489), patient with genes mutated (green line) have a better prognosis than patients with no gene mutations (red line). Module 7 is most statistically significant modules from the CoxPH and KM analysis.
+11.	The ReactomeFIViz app splits samples into two groups: samples having genes mutated in a module (green line), and samples having no genes mutated in the module (red line). The plugin uses the log-rank test to compare the two survival curves, and estimates p-values. In Modules 4 (KM: p=0.00489), patient with genes mutated (green line) have a better prognosis than patients with no gene mutations (red line). Module 7 is most statistically significant modules from the CoxPH and KM analysis.
   
 ![img2](https://github.com/bioinformaticsdotca/CSHL_2019/blob/master/Module14/Reactome2-1.png?raw=true)   
 
