@@ -30,7 +30,7 @@ The data sets in the workshop can be downloaded from below. If your download spe
 
 ## AWS Image
 
-After all the workshop, we will publish our AMI. The AMI ID will be here.
+The AWS AMI for 2019 CBW workshop is publicly avaiable at US East region. AMI name: CBW_2019, AMI ID: ami-0b3a39967ade13fbb. Please let us know if you need it in other regions.
 
 ## Tools and Installation Instructions
 ### bioperl
